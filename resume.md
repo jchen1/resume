@@ -1,21 +1,22 @@
 Jeff Chen
 =========================
 
+----
+
 Education
 --------------------
 
 2012-2016
-:   **[Carnegie Mellon University Class of 2016](http://cmu.edu)** -- B.S. Computer Science
+:   **[Carnegie Mellon University Class of 2016](http://cmu.edu)** - B.S. Computer Science
 
     * Expected minors in Human-Computer Interaction and Robotics
-    * Relevant coursework --  Introduction to Computer Systems, Parallel and Sequential Data Structures and Algorithms, Great Theoretical Ideas in Computer Science, Science of the Web, Human-Robot Interaction, Cognitive Robotics, Humanoids
+    * Relevant coursework - Introduction to Computer Systems, Parallel and Sequential Data Structures and Algorithms, Great Theoretical Ideas in Computer Science, Science of the Web, Human-Robot Interaction, Cognitive Robotics, Humanoids
 
 Experience
 --------------------
 
 Summer 2013
 :   **Stokes Scholar**, *[National Security Agency](https://nsa.gov/)*
-    (Fort Meade, Maryland)
 
     * Held TS//SI clearance since 2012
     * Wrote tool to detect and neutralize Windows malware using infection markers
@@ -26,7 +27,6 @@ Summer 2013
 
 2010-2012
 :   **Software Lead**, *[AUVSI RoboSub](http://avbotz.com/)*
-    (Pleasanton, California)
 
     * Wrote and maintained software for an autonomous submarine
         - Implemented computer vision algorithms, including image segmentation, blob detection, and line detection
@@ -42,19 +42,19 @@ Februrary 2014
 :   Created **[MiniPlay](https://github.com/iambald/MiniPlay)**, a Chrome extension to operate Google Play Music and add features like global shortcuts and Last.fm scrobbling. Has over 100 daily users.
 
 January 2014
-:   Built a **[threadpool](https://github.com/iambald/threadpool) in modern C++11 to fill the gap in the C++ standard library between `std::async` and `std::thread`.
+:   Built a **[threadpool](https://github.com/iambald/threadpool)** in modern C++11 to fill the gap in the C++ standard library between `std::async` and `std::thread`.
 
 April 2013
 :   Wrote **[Skein](https://github.com/iambald/Skein)**, a high-performance Skein-1024 brute forcer for the [xkcd Alma Mater challenge](http://xkcd.com/1193) that out-performed the vast majority of schools including Cornell, and coming only twenty bits short from the winner, a group of CMU students using a supercomputer.
 
 December 2012
-:   Wrote a virtual machine in `C`, designed to interpret and execute bytecode in `C0` as a final project for 15-122.
+:   Wrote a virtual machine in C, designed to interpret and execute bytecode in C0 as a final project for 15-122.
 
 September 2012
 :   At the Fall 2012 PennApps hackathon, developed **[Chroma](https://github.com/iambald/Chroma)**, an Android application designed to help colorblind people distinguish between the entire color spectrum
 
 October 2011
-:   Finalist for the **CSAW High SChool Cyber Forensics Challenge**
+:   Finalist for the **CSAW High School Cyber Forensics Challenge**
 
 
 Skills
@@ -75,5 +75,5 @@ Other
 
 ----
 
-> <jeffrey@cmu.edu> • +1 (925) 699 5663 • [jeff.yt](jeff.yt)\
->  7622 Ridgeline Drive -- Dublin CA 94568
+>  7622 Ridgeline Drive - Dublin CA 94568\
+> <jeffrey@cmu.edu> • +1 (925) 699 5663 • [jeff.yt](jeff.yt)

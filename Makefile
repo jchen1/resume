@@ -1,16 +1,16 @@
-all: index.html index.pdf index.docx index.txt
+all: resume.html resume.pdf resume.docx resume.txt
 
-index.html: index.md style.css
-	pandoc --standalone -c style.css --from markdown --to html -o index.html index.md
+resume.html: resume.md style.css
+	pandoc --standalone -c style.css --from markdown --to html -o resume.html resume.md
 
-index.pdf: index.html
-	wkhtmltopdf index.html index.pdf
+resume.pdf: resume.html
+	./wkhtmltopdf resume.html resume.pdf
 
-index.docx: index.md
-	pandoc --from markdown --to docx -o index.docx index.md
+resume.docx: resume.md
+	pandoc --from markdown --to docx -o resume.docx resume.md
 
-index.txt: index.md
-	pandoc --standalone --smart --from markdown --to plain -o index.txt index.md
+resume.txt: resume.md
+	pandoc --standalone --smart --from markdown --to plain -o resume.txt resume.md
 
 clean:
 	rm -f *.html *.pdf *.docx *.txt
