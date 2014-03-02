@@ -76,4 +76,4 @@ Other
 ----
 
 >  7622 Ridgeline Drive - Dublin CA 94568\
-> <jeffrey@cmu.edu> • +1 (925) 699 5663 • [jeff.yt](jeff.yt)
+> <jeffrey@cmu.edu> • +1 (925) 699 5663 • [jeff.yt](http://jeff.yt)
