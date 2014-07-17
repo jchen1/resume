@@ -30,8 +30,7 @@ Summer 2013
 
     * Wrote and maintained software for an autonomous submarine
         - Implemented computer vision algorithms, including image segmentation, blob detection, and line detection
-        - Wrote PID controller and Kalman filter for accurate motion through potentially turbulent water
-        - Managed large codebase and over ten developers with Git
+        - Wrote PID controller and Kalman filter for accurate motion through turbulent water
     * Taught novice programmers object-oriented programming and C++
 
 
@@ -39,13 +38,13 @@ Projects and Awards
 ----------------------------------
 
 Februrary 2014
-:   Created **[MiniPlay](https://github.com/iambald/MiniPlay)**, a Chrome extension to operate Google Play Music and add features like global shortcuts and Last.fm scrobbling. Has over 100 daily users.
+:   Created **[MiniPlay](https://github.com/iambald/MiniPlay)**, a Chrome extension to operate Google Play Music and add features like global shortcuts and Last.fm scrobbling. Has over 300 daily users.
 
 January 2014
 :   Built a **[threadpool](https://github.com/iambald/threadpool)** in modern C++11 to fill the gap in the C++ standard library between `std::async` and `std::thread`.
 
 April 2013
-:   Wrote **[Skein](https://github.com/iambald/Skein)**, a high-performance Skein-1024 brute forcer for the [xkcd Alma Mater challenge](http://xkcd.com/1193) that out-performed the vast majority of schools including Cornell, and coming only twenty bits short from the winner, a group of CMU students using a supercomputer.
+:   Wrote **[Skein](https://github.com/iambald/Skein)**, a high-performance brute forcer to crack aa Skein-1024 hash. In the [xkcd Alma Mater challenge](http://xkcd.com/1193) (listed as laspositascollege.edu), out-performed the efforts of entire universities, including Cornell and LSU.
 
 December 2012
 :   Wrote a virtual machine in C, designed to interpret and execute bytecode in C0 as a final project for 15-122.
