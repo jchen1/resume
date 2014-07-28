@@ -9,18 +9,19 @@
 
 /* Whole document */
 body {
-    font-family: "PT Serif", serif;
+    font-family: "Minion Pro", serif;
     width: 800px;
     min-width: 800px;
     margin: auto;
     background: #FFFFFF;
     padding: 10px 10px 10px 10px;
-    font-size: 10pt;
+    font-size: 10.5pt;
 }
 
 /* Title of the resume */
 h1 {
-    font-family: "PT Sans Narrow", sans-serif;
+    font-family: "Apex New", sans-serif;
+    font-weight: 400;
     font-size: 50pt;
     color: #333332;
     text-align:right;
@@ -30,7 +31,8 @@ h1 {
 
 /* Titles of categories */
 h2 {
-    font-family: "PT Sans Narrow", sans-serif;
+    font-family: "Apex New", sans-serif;
+    font-weight: 400;
     font-size: 16pt;
     text-transform: uppercase;
     color: #333332;
@@ -43,7 +45,12 @@ h2:before {
     width: 14%;
     height: 8pt;
     margin-bottom: 0.15em;
-    background-color: #343434;
+    background-color: #2c3e50;
+}
+
+strong {
+    font-family: "Apex New", sans-serif;
+    font-weight: 400;
 }
 
 /* Definitions */
@@ -53,7 +60,8 @@ dt {
     clear: left;
     width: 14%;
     padding-right: 2%;
-    /*font-weight: bold;*/
+    font-family: "Apex New", sans-serif;
+    font-weight: 400;
 }
 dd {
     margin-left: 16%;

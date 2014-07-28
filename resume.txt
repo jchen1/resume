@@ -18,21 +18,27 @@ Education
 Experience
 ----------
 
-Summer 2013
+2013-2014
     Stokes Scholar, National Security Agency
 
     -   Held TS//SI clearance since 2012
-    -   Wrote tool to detect and neutralize Windows malware using
-        infection markers
-        -   Enabled lightweight, fast, and accurate detection of known
-            malware
-        -   Neutralized malware by taking control of known infection
-            markers
-        -   Applied heuristic analysis to potential infection markers
-            with success rate comparable to commercial antivirus
-            software
-    -   Created tool that displays a two-dimensional overview of network
-        activity for intuitive analysis
+    -   Summer 2013
+        -   Wrote tool to detect and neutralize Windows malware using
+            infection markers
+            -   Enabled lightweight, fast, and accurate detection of
+                known malware
+            -   Neutralized malware by taking control of known infection
+                markers
+            -   Applied heuristic analysis to potential infection
+                markers with success rate comparable to commercial
+                antivirus software
+        -   Created tool that displays a two-dimensional overview of
+            network activity for intuitive analysis
+    -   Summer 2014
+        -   Did some stuff relating to this other stuff
+            -   It was done in this language
+            -   It was pretty fucking awesome
+            -   Here’s another bullet point
 
 2010-2012
     Software Lead, AUVSI RoboSub
@@ -45,35 +51,35 @@ Summer 2013
         -   Managed large codebase and over ten developers with Git
     -   Taught novice programmers object-oriented programming and C++
 
-Projects and Awards
--------------------
+Projects
+--------
 
-Februrary 2014
-    Created MiniPlay, a Chrome extension to operate Google Play Music
-    and add features like global shortcuts and Last.fm scrobbling. Has
-    over 100 daily users.
+July 2014
+    Wrote Ties, an Android application that helps people stay in touch.
 
-January 2014
+April 2014
+    Implemented computer stereo vision in OpenCV as a final project.
+
+April 2014
+    Made an accurate color segmenter by bounding a floodfill with the
+    results of an edge detector as a final project.
+
+February 2014
+    Created MiniPlay, a Chrome extension for Google Play Music with over
+    200 daily users.
+
+August 2013
     Built a threadpool in modern C++11 to fill the gap in the C++
     standard library between std::async and std::thread.
 
-April 2013
-    Wrote Skein, a high-performance Skein-1024 brute forcer for the xkcd
-    Alma Mater challenge that out-performed the vast majority of schools
-    including Cornell, and coming only twenty bits short from the
-    winner, a group of CMU students using a supercomputer.
-
 December 2012
-    Wrote a virtual machine in C, designed to interpret and execute
-    bytecode in C0 as a final project for 15-122.
+    Wrote a virtual machine designed to interpret and execute C0
+    bytecode as a final project.
 
 September 2012
     At the Fall 2012 PennApps hackathon, developed Chroma, an Android
     application designed to help colorblind people distinguish between
-    the entire color spectrum
-
-October 2011
-    Finalist for the CSAW High School Cyber Forensics Challenge
+    the entire color spectrum.
 
 Skills
 ------
@@ -83,9 +89,6 @@ Languages
 
 Web
     CSS, HTML, Node.js
-
-APIs
-    WinAPI, NTAPI, OpenCV, POSIX
 
 Other
     Bash, Git, Markdown, LaTeX, CMD, GDB
