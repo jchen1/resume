@@ -37,8 +37,7 @@ Experience
 
     * Wrote and maintained software for an autonomous submarine
         - Implemented computer vision algorithms, including image segmentation, blob detection, and line detection
-        - Wrote PID controller and Kalman filter for accurate motion through potentially turbulent water
-        - Managed large codebase and over ten developers with Git
+        - Wrote PID controller and Kalman filter for accurate motion through turbulent water
     * Taught novice programmers object-oriented programming and C++
 
 
@@ -54,11 +53,14 @@ April 2014
 April 2014
 :   Made an accurate **[color segmenter](https://github.com/cyang1/segmentation)** by bounding a floodfill with the results of an edge detector as a final project.
 
-February 2014
-:   Created **[MiniPlay](https://github.com/iambald/MiniPlay)**, a Chrome extension for Google Play Music with over 200 daily users.
+Februrary 2014
+:   Created **[MiniPlay](https://github.com/iambald/MiniPlay)**, a Chrome extension to operate Google Play Music and add features like global shortcuts and Last.fm scrobbling. Has over 300 daily users.
 
 August 2013
 :   Built a **[threadpool](https://github.com/iambald/threadpool)** in modern C++11 to fill the gap in the C++ standard library between `std::async` and `std::thread`.
+
+April 2013
+:   Wrote **[Skein](https://github.com/iambald/Skein)**, a high-performance brute forcer to crack aa Skein-1024 hash. In the [xkcd Alma Mater challenge](http://xkcd.com/1193) (listed as laspositascollege.edu), out-performed the efforts of entire universities, including Cornell and LSU.
 
 December 2012
 :   Wrote a virtual machine designed to interpret and execute `C0` bytecode as a final project.
