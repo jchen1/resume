@@ -7,20 +7,23 @@
  * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
  */
 
+ @import url("fonts.css");
+
 /* Whole document */
 body {
-    font-family: "Minion Pro", serif;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
     width: 800px;
     min-width: 800px;
     margin: auto;
     background: #FFFFFF;
     padding: 10px 10px 10px 10px;
-    font-size: 10.5pt;
+    font-size: 10pt;
 }
 
 /* Title of the resume */
 h1 {
-    font-family: "Apex New", sans-serif;
+    font-family: "ApexNew-Medium", sans-serif;
     font-weight: 400;
     font-size: 50pt;
     color: #333332;
@@ -31,7 +34,7 @@ h1 {
 
 /* Titles of categories */
 h2 {
-    font-family: "Apex New", sans-serif;
+    font-family: "ApexNew-Medium", sans-serif;
     font-weight: 400;
     font-size: 16pt;
     text-transform: uppercase;
@@ -49,7 +52,7 @@ h2:before {
 }
 
 strong {
-    font-family: "Apex New", sans-serif;
+    font-family: "ApexNew-Medium", sans-serif;
     font-weight: 400;
 }
 
@@ -60,7 +63,7 @@ dt {
     clear: left;
     width: 14%;
     padding-right: 2%;
-    font-family: "Apex New", sans-serif;
+    font-family: "ApexNew-Medium", sans-serif;
     font-weight: 400;
 }
 dd {

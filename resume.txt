@@ -25,15 +25,11 @@ Experience
     -   Summer 2013
         -   Wrote tool to detect and neutralize Windows malware using
             infection markers
-            -   Enabled lightweight, fast, and accurate detection of
-                known malware
-            -   Neutralized malware by taking control of known infection
-                markers
+            -   Enabled lightweight, fast, and accurate detection and
+                neutralization of known malware
             -   Applied heuristic analysis to potential infection
                 markers with success rate comparable to commercial
                 antivirus software
-        -   Created tool that displays a two-dimensional overview of
-            network activity for intuitive analysis
     -   Summer 2014
         -   Did some stuff relating to this other stuff
             -   It was done in this language
@@ -41,7 +37,7 @@ Experience
             -   Here’s another bullet point
 
 2010-2012
-    Software Lead, AUVSI RoboSub
+    Lead Developer, AUVSI RoboSub
 
     -   Wrote and maintained software for an autonomous submarine
         -   Implemented computer vision algorithms, including image
@@ -58,10 +54,6 @@ July 2014
 
 April 2014
     Implemented computer stereo vision in OpenCV as a final project.
-
-April 2014
-    Made an accurate color segmenter by bounding a floodfill with the
-    results of an edge detector as a final project.
 
 Februrary 2014
     Created MiniPlay, a Chrome extension to operate Google Play Music

@@ -21,19 +21,16 @@ Experience
     * Held TS//SI clearance since 2012
     * Summer 2013
         - Wrote tool to detect and neutralize Windows malware using infection markers
-            + Enabled lightweight, fast, and accurate detection of known malware
-            + Neutralized malware by taking control of known infection markers
+            + Enabled lightweight, fast, and accurate detection and neutralization of known malware
             + Applied heuristic analysis to potential infection markers with success rate comparable to commercial antivirus software
-        - Created tool that displays a two-dimensional overview of network activity for intuitive analysis
     * Summer 2014
         - Did some stuff relating to this other stuff
             + It was done in this language
             + It was pretty fucking awesome
             + Here's another bullet point
 
-
 2010-2012
-:   **Software Lead**, *[AUVSI RoboSub](http://avbotz.com/)*
+:   **Lead Developer**, *[AUVSI RoboSub](http://avbotz.com/)*
 
     * Wrote and maintained software for an autonomous submarine
         - Implemented computer vision algorithms, including image segmentation, blob detection, and line detection
@@ -49,9 +46,6 @@ July 2014
 
 April 2014
 :   Implemented **[computer stereo vision](https://github.com/iambald/depth)** in OpenCV as a final project.
-
-April 2014
-:   Made an accurate **[color segmenter](https://github.com/cyang1/segmentation)** by bounding a floodfill with the results of an edge detector as a final project.
 
 Februrary 2014
 :   Created **[MiniPlay](https://github.com/iambald/MiniPlay)**, a Chrome extension to operate Google Play Music and add features like global shortcuts and Last.fm scrobbling. Has over 300 daily users.
