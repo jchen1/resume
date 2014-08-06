@@ -45,7 +45,7 @@ July 2014
 :   Wrote **[Ties](https://github.com/iambald/myCircle)**, an Android application that helps people stay in touch.
 
 April 2014
-:   Implemented **[computer stereo vision](https://github.com/iambald/depth)** in OpenCV as a final project.
+:   Implemented **[computer stereo vision](https://github.com/iambald/depth)** in OpenCV using semi-global block matching.
 
 Februrary 2014
 :   Created **[MiniPlay](https://github.com/iambald/MiniPlay)**, a Chrome extension to operate Google Play Music and add features like global shortcuts and Last.fm scrobbling. Has over 300 daily users.
