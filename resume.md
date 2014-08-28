@@ -24,10 +24,9 @@ Experience
             + Enabled lightweight, fast, and accurate detection and neutralization of known malware
             + Applied heuristic analysis to potential infection markers with success rate comparable to commercial antivirus software
     * Summer 2014
-        - Did some stuff relating to this other stuff
-            + It was done in this language
-            + It was pretty fucking awesome
-            + Here's another bullet point
+        - Created tool for CNE operations
+            + Surveys and collects computer-to-computer communications
+            + Designed and implemented secure communications protocol
 
 2010-2012
 :   **Lead Developer**, *[AUVSI RoboSub](http://avbotz.com/)*
