@@ -1,30 +1,42 @@
+@base: #428bca;
+@border: #aaa;
+
 body {
-    font-family: "Georgia", serif;
+    font-family: "Gentium Basic", serif;
     font-size: 12pt;
     background-color: #eee;
 }
 
 h1, h2, h3 {
-    font-family: "PT Sans Narrow", sans-serif;
+    font-family: "Open Sans Condensed", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 strong {
-    font-family: "PT Sans", sans-serif;
+    font-family: "Open Sans Condensed", sans-serif;
 }
 
 h2 {
     font-size: 18pt;
+    padding-bottom: 0.2em;
 }
 
 h3 {
     font-size: 14pt;
 }
 
-#contact, #languages, #web, #other, #education, #experience {
+a {
+    color: black;
+}
+
+code {
+    color: black;
+}
+
+#contact, #programming, #web, #other, #education, #experience, #activities {
     padding-bottom: 1em;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid @border;
 }
 
 #projects {
@@ -32,19 +44,19 @@ h3 {
 }
 
 #content {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid @border;
 }
 
 #education, #experience, #projects {
     padding-right: 1em;
 }
 
-#contact, #languages, #web, #other {
+#contact, #programming, #web, #other, #activities {
     padding-left: 1em;
 }
 
 #header {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid @border;
 
     h1 {
         text-align: right;
@@ -53,7 +65,7 @@ h3 {
 }
 
 #content-left{
-    border-right: 1px solid #eee;
+    border-right: 1px solid @border;
 }
 
 a[href]:after {
@@ -85,9 +97,13 @@ code {
   background-color: #fff;
 }
 
+#page {
+    padding: 0em 5em;
+}
+
 @media only screen {
     #page {
-        padding: 4em;
+        padding: 5em;
         margin-top: 3em;
         margin-bottom: 3em;
         box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
