@@ -1,0 +1,114 @@
+@import 'include-media';
+
+$font-stack: "Open Sans", sans-serif;
+$font-size: 11pt;
+$body-weight: 300;
+$heading-weight: 400;
+$monospace-font: "Source Code Pro", monospace;
+$background-color: #eee;
+$resume-color: #fff;
+$line-color: #aaa;
+
+$breakpoints: (
+  'phone': 30em,
+  'tablet': 48em,
+  'desktop': 62em
+);
+
+body {
+	font-family: $font-stack;
+	font-size: $font-size;
+	font-weight: $body-weight;
+	background-color: $background-color;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, strong {
+	font-weight: $heading-weight;
+}
+
+code {
+	font-family: $monospace-font;
+	color: black;
+}
+
+.container {
+	background-color: $resume-color;
+	margin: 0 auto;
+	box-sizing: border-box;
+
+	@include media("screen") {
+		max-width: 960px;
+	}
+
+	@include media(">=tablet", "screen") {
+		padding: 5em;
+		box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
+	}
+
+	@include media("<tablet") {
+		padding: 0em 1em 5em 1em;
+	}
+}
+
+.header {
+	ul {
+		list-style-type: none;
+		padding-left: 0;
+	}
+}
+
+.content {
+	ul {
+		margin-top: 0;
+	}
+
+	div {
+		padding-right: 8px;
+	}
+
+	@include media("<desktop") {
+		div > div{
+			padding-left: 8px;
+		}
+	}
+}
+
+.sidebar {
+	ul {
+		list-style-type: none;
+		padding-left: 8px;
+	}
+	@include media(">=desktop") {
+		border-left: 1px solid $line-color;
+	}
+	@include media(">=tablet") {
+		padding-left: 0;
+
+		div, ul {
+			padding-left: 8px;
+		}
+	}
+	@include media("<desktop") {
+		div {
+			border-bottom: 0;
+			text-align: left;
+		}
+	}
+}
+
+.line {
+	border-bottom: 1px solid $line-color;
+}
+
+.project {
+	@include media("<desktop") {
+		padding-bottom: 1em;
+	}
+}
+
+#projects {
+	@include media("<desktop") {
+		border-bottom: 1px solid $line-color;
+	}
+}

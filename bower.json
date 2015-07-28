@@ -1,0 +1,16 @@
+{
+  "name": "resume",
+  "version": "0.0.0",
+  "homepage": "https://github.com/iambald/resume",
+  "authors": [
+    "Jeff Chen <jeffrey@cmu.edu>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
