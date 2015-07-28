@@ -8,6 +8,9 @@ $monospace-font: "Source Code Pro", monospace;
 $background-color: #eee;
 $resume-color: #fff;
 $line-color: #aaa;
+$header-color: #3498db;
+$header-text-color: #fff;
+$link-color: #2980b9;
 
 $breakpoints: (
   'phone': 30em,
@@ -21,9 +24,17 @@ body {
 	font-weight: $body-weight;
 	background-color: $background-color;
 	margin: 0;
+
+	@include media("print") {
+		background-color: $resume-color;
+	}
 }
 
-h1, h2, h3, h4, h5, strong {
+h1, h2, h3 {
+	/*text-transform: uppercase;*/
+}
+
+h1, h2, h3, strong {
 	font-weight: $heading-weight;
 }
 
@@ -38,12 +49,33 @@ code {
 	box-sizing: border-box;
 
 	@include media("screen") {
-		max-width: 960px;
+		max-width: 62em;
+		a {
+			color: $link-color;
+		}
 	}
 
 	@include media(">=tablet", "screen") {
-		padding: 5em;
 		box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
+	}
+
+	@include media("print") {
+		min-width: 62em;
+		width: 62em;
+		padding: 0em 5em;
+		a {
+			color: black;
+		}
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.content {
+	@include media(">=tablet", "screen") {
+		padding: 0em 5em 5em 5em;
 	}
 
 	@include media("<tablet") {
@@ -52,13 +84,37 @@ code {
 }
 
 .header {
+
+	@include media("screen") {
+		background-color: $header-color;
+		color: $header-text-color;
+
+		a {
+			color: $header-text-color;
+		}
+	}
+
 	ul {
 		list-style-type: none;
 		padding-left: 0;
 	}
+
+
+	@include media(">=tablet", "screen") {
+		padding: 5em 5em 0em 5em;
+		margin: 0;
+	}
+
+	@include media("<tablet", "screen") {
+		padding: 0em 1em 0em 1em;
+	}
+
+	@include media("print") {
+		border-bottom: 1px solid $line-color;
+	}
 }
 
-.content {
+.body {
 	ul {
 		margin-top: 0;
 	}
