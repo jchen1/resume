@@ -1,0 +1,73 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11pt;
+  font-weight: 300;
+  background-color: #eee;
+  margin: 0; }
+
+h1, h2, h3, h4, h5, strong {
+  font-weight: 400; }
+
+code {
+  font-family: "Source Code Pro", monospace;
+  color: black; }
+
+.container {
+  background-color: #fff;
+  margin: 0 auto;
+  box-sizing: border-box; }
+  @media screen {
+    .container {
+      max-width: 960px; } }
+
+@media screen and (min-width: 48em) {
+  .container {
+    padding: 5em;
+    box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5); } }
+  @media (max-width: 47.99em) {
+    .container {
+      padding: 0em 1em 5em 1em; } }
+
+.header ul {
+  list-style-type: none;
+  padding-left: 0; }
+
+.content ul {
+  margin-top: 0; }
+
+.content div {
+  padding-right: 8px; }
+
+@media (max-width: 61.99em) {
+  .content div > div {
+    padding-left: 8px; } }
+
+.sidebar ul {
+  list-style-type: none;
+  padding-left: 8px; }
+
+@media (min-width: 62em) {
+  .sidebar {
+    border-left: 1px solid #aaa; } }
+
+@media (min-width: 48em) {
+  .sidebar {
+    padding-left: 0; }
+    .sidebar div, .sidebar ul {
+      padding-left: 8px; } }
+
+@media (max-width: 61.99em) {
+  .sidebar div {
+    border-bottom: 0;
+    text-align: left; } }
+
+.line {
+  border-bottom: 1px solid #aaa; }
+
+@media (max-width: 61.99em) {
+  .project {
+    padding-bottom: 1em; } }
+
+@media (max-width: 61.99em) {
+  #projects {
+    border-bottom: 1px solid #aaa; } }
