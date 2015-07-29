@@ -108,7 +108,7 @@ code {
     border-left: 1px solid #aaa;
     display: inline-block; }
     .sidebar > div {
-      height: 100%; } }
+      /*height: 100%;*/ } }
 
 @media print {
   .sidebar {
@@ -117,7 +117,7 @@ code {
     padding-left: 0; }
     .sidebar > div {
       border-bottom: 1px solid #aaa;
-      height: 100%; } }
+      /*height: 100%;*/ } }
 
 @media (min-width: 48em) {
   .sidebar {
