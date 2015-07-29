@@ -27,7 +27,7 @@ gulp.task('css', function() {
     return gulp.src('css/*.css')
         .pipe(minify({compatibility: 'ie8'}))
         .pipe(concat('resume.min.css'))
-        .pipe(gulp.dest('css'));
+        .pipe(gulp.dest('dist/css'));
 });
 
 // Concatenate & Minify JS

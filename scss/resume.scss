@@ -69,6 +69,7 @@ code {
 
 	@include media(">=tablet", "screen") {
 		box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
+		margin-top: 2em;
 	}
 
 	@include media("print") {
@@ -113,10 +114,14 @@ code {
 		padding-left: 0;
 	}
 
+	.contact {
+		text-align: right;
+	}
+
 
 	@include media(">=tablet", "screen") {
-		padding: 2em 5em 0em 5em;
-		margin: 5em 0 0 0;
+		padding: 2em 5em 1em 5em;
+		margin: 0;
 	}
 
 	@include media("<tablet", "screen") {

@@ -39,7 +39,8 @@ code {
 
 @media screen and (min-width: 48em) {
   .container {
-    box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5); } }
+    box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
+    margin-top: 2em; } }
   @media print {
     .container {
       padding: 0; }
@@ -71,10 +72,13 @@ code {
   list-style-type: none;
   padding-left: 0; }
 
+.header .contact {
+  text-align: right; }
+
 @media screen and (min-width: 48em) {
   .header {
-    padding: 2em 5em 0em 5em;
-    margin: 5em 0 0 0; } }
+    padding: 2em 5em 1em 5em;
+    margin: 0; } }
 
 @media screen and (max-width: 47.99em) {
   .header {
