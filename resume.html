@@ -16,24 +16,24 @@
       <div class="col-xs-5 col-sm-3 col-md-3">
         <ul>
           <li>
-            <a href="mailto:jeffrey@cmu.edu">jeffrey@cmu.edu</a>
+            <i class="fa fa-envelope-o fa-fw"></i>&nbsp;&nbsp;<a href="mailto:jeffrey@cmu.edu">jeffrey@cmu.edu</a>
           </li>
           <li>
-            Dublin, CA
+            <i class="fa fa-map-marker fa-fw"></i>&nbsp;&nbsp;Dublin, CA
           </li>
           <li>
-            1 (925) 699 5663
+            <i class="fa fa-mobile fa-fw"></i>&nbsp;&nbsp;1 (925) 699 5663
           </li>
           <li>
-            <a href="http://jeff.yt" target="_blank">jeff.yt</a>
+            <i class="fa fa-cloud fa-fw"></i>&nbsp;&nbsp;<a href="http://jeff.yt" target="_blank">jeff.yt</a>
           </li>
         </ul>
       </div>
     </div>
-    <div class="content row line">
+    <div class="content row">
       <div class="col-md-9 body">
         <div class="line" id="education">
-          <div><h2>Education</h2></div>
+          <div><h2><i class="fa fa-graduation-cap fa-fw"></i>&nbsp;&nbsp;Education</h2></div>
           <div>
             <h3><a href="http://www.cmu.edu" target="_blank">Carnegie Mellon Class of 2016</a> &mdash; <em>B.S. Computer Science</em> &mdash; 3.4/4.0</h3>
             <ul>
@@ -44,7 +44,7 @@
         </div>
 
         <div class="line" id="experience">
-          <div><h2>Experience</h2></div>
+          <div><h2><i class="fa fa-briefcase fa-fw"></i>&nbsp;&nbsp;Experience</h2></div>
           <div>
             <h3><a href="https://www.nsa.gov" target="_blank">National Security Agency</a> &mdash; <em>Stokes Scholar</em></h3>
             <p>Holder of TS//SCI clearance with special background investigation and polygraph</p>
@@ -56,11 +56,11 @@
                     Developed Windows anti-malware software
                     <ul>
                       <li>Used infection markers to enable lightweight, fast, and accurate detection and neutralization of known malware</li>
-                      <li>Applied heuristic analysis to potential infection markers with success rate comparable to commercial antivirus software</li>
+                      <li>Applied heuristic analysis to tag potential infection markers</li>
                     </ul>
                   </li>
                   <li>
-                    Created a tool that visualizes network traffic in an intuitive manner, allowing analysts to more easily notice anomalous behavior
+                    Created an intuitive network traffic visualizer, allowing analysts to more easily notice anomalous behavior
                   </li>
                 </ul>
               </div>
@@ -80,14 +80,14 @@
               <div class="col-md-2 col-xs-12"><strong>Summer 2015</strong></div>
               <div class="col-md-10 col-xs-12">
                 <ul>
-                  <li>Designed and implemented a software keyboard for Android devices that operates in the TrustZone secure environment</li>
+                  <li>Designed and implemented a software keyboard for Android devices that operates in the <a href="http://www.arm.com/products/processors/technologies/trustzone/" target="_blank">TrustZone secure environment</a></li>
                   <li>
-                    Ported Linux IMA (Integrity Measurement Architecture) to Android
+                    Ported <a href="http://linux-ima.sourceforge.net/" target="_blank">IMA (Integrity Measurement Architecture)</a> to Android
                     <ul>
                       <li>Partially implemented the Trusted Platform Module (TPM) standard in the TrustZone secure environment</li>
-                      <li>Created Linux kernel driver to interface with the TPM implementation</li>
+                      <li>Designed and developed a Linux kernel driver to interface with the TPM implementation</li>
                       <li>Created TrustZone secure application to sign and certify the IMA measurement list</li>
-                      <li>Created an Android system service to allow applications to access the IMA measurement list for remote attestation</li>
+                      <li>Created a system service enabling Android remote attestation</li>
                     </ul>
                   </li>
                 </ul>
@@ -96,7 +96,15 @@
           </div>
         </div>
         <div id="projects">
-          <div><h2>Projects</h2></div>
+          <div><h2><i class="fa fa-code fa-fw"></i>&nbsp;&nbsp;Projects</h2></div>
+          <div class="row project" id="espresso">
+              <div class="col-md-2 col-sm-12">
+                <strong>April 2015</strong>
+              </div>
+              <div class="col-md-10 col-sm-12">
+                  Created <strong><a href="https://github.com/jczhang/espresso" target="_blank">espresso</a></strong>, a deep learning framework designed to produce maintainable yet highly performant code compatible with <a href="http://caffe.berkeleyvision.org/" target="_blank">Caffe</a>.
+              </div>
+          </div>
           <div class="row project" id="ties">
               <div class="col-md-2 col-sm-12">
                 <strong>July 2014</strong>
@@ -137,20 +145,20 @@
                   Wrote <strong><a href="https://github.com/iambald/Skein" target="_blank">Skein</a></strong>, a high-performance brute forcer to crack a Skein-1024 hash for the <a href="http://xkcd.com/1193" target="_blank">xkcd Alma Mater challenge</a>, out-performing the efforts of entire universities, including Cornell and LSU.
               </div>
           </div>
-          <div class="row project" id="c0">
-              <div class="col-md-2 col-sm-12">
-                <strong>Dec 2012</strong>
-              </div>
-              <div class="col-md-10 col-sm-12">
-                  Wrote a <strong>virtual machine</strong> designed to interpret and execute <code>C0</code> bytecode as a final project.
-              </div>
-          </div>
           <div class="row project" id="chroma">
               <div class="col-md-2 col-sm-12">
                 <strong>Sept 2012</strong>
               </div>
               <div class="col-md-10 col-sm-12">
-                  At the Fall 2012 PennApps hackathon, developed <strong><a href="https://github.com/iambald/Chroma" target="_blank">Chroma</a></strong>, an Android application designed to help colorblind people distinguish between the entire color spectrum.
+                  Developed <strong><a href="https://github.com/iambald/Chroma" target="_blank">Chroma</a></strong>, an Android application designed to help colorblind people distinguish between the entire color spectrum.
+              </div>
+          </div>
+          <div class="row project" id="avbotz">
+              <div class="col-md-2 col-sm-12">
+                <strong>2010-2012</strong>
+              </div>
+              <div class="col-md-10 col-sm-12">
+                  Designed, wrote, and maintained <strong><a href="https://github.com/avbotz/eva-public" target="_blank">software for an autonomous submarine</a></strong>.
               </div>
           </div>
           <br>
@@ -175,8 +183,8 @@
           <div><h2>Systems</h2></div>
           <ul>
             <li>Cryptosystem design</li>
-            <li>*nix kernel development</li>
-            <li>Windows development</li>
+            <li>*nix kernel dev</li>
+            <li>Windows dev</li>
             <li>CUDA/OpenCL</li>
           </ul>
 
@@ -201,6 +209,7 @@
             <li>Markdown</li>
             <li>LaTeX</li>
             <li>Git</li>
+            <li>OpenCV</li>
           </ul>
 
         </div>
@@ -208,5 +217,7 @@
     </div>
   </div>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:300' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
  </body>
 </html>

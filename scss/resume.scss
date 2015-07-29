@@ -8,9 +8,9 @@ $monospace-font: "Source Code Pro", monospace;
 $background-color: #eee;
 $resume-color: #fff;
 $line-color: #aaa;
-$header-color: #3498db;
+$header-color: #795548;
 $header-text-color: #fff;
-$link-color: #2980b9;
+$link-color: #6D4C41;
 
 $breakpoints: (
   'phone': 30em,
@@ -32,6 +32,14 @@ body {
 
 @page {
 	min-width: 62em;
+}
+
+h2 {
+	margin: 0.5em 0;
+}
+
+h3 {
+	margin: 0.75em 0;
 }
 
 h1, h2, h3 {
@@ -64,7 +72,7 @@ code {
 	}
 
 	@include media("print") {
-		padding: 0em 2em;
+		padding: 0;
 		a {
 			color: black;
 		}
@@ -118,11 +126,13 @@ code {
 	@include media("print") {
 		border-bottom: 1px solid $line-color;
 	}
+
 }
 
 .body {
 	ul {
 		margin-top: 0;
+		margin-bottom: 0.5em;
 	}
 
 	div {
@@ -143,19 +153,23 @@ code {
 	}
 	@include media(">=desktop", "screen") {
 		border-left: 1px solid $line-color;
+		display: inline-block;
+		> div {
+			height: 100%;
+		}
 	}
 	@include media("print") {
 		border-left: 1px solid $line-color;
+		display: inline-block;
+		padding-left: 0;
 		> div {
 			border-bottom: 1px solid $line-color;
+			height: 100%;
 		}
 	}
 	@include media(">=tablet") {
 		padding-left: 0;
 
-		div, ul {
-			padding-left: 8px;
-		}
 	}
 	@include media("<desktop", "screen") {
 		div {
@@ -170,13 +184,17 @@ code {
 }
 
 .project {
-	@include media("<desktop") {
-		padding-bottom: 1em;
-	}
+	padding-bottom: 0.5em;
 }
 
 #projects {
-	@include media("<desktop") {
+	@include media("<desktop", "screen") {
 		border-bottom: 1px solid $line-color;
+	}
+}
+
+#experience {
+	ul {
+		padding-left: 20px;
 	}
 }
