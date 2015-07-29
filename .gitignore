@@ -1,4 +1,5 @@
 vendor
+node_modules/
 examples/resume/_*.md
 examples/output/*.html
 examples/output/*.pdf

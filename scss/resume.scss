@@ -30,6 +30,10 @@ body {
 	}
 }
 
+@page {
+	min-width: 62em;
+}
+
 h1, h2, h3 {
 	/*text-transform: uppercase;*/
 }
@@ -60,9 +64,7 @@ code {
 	}
 
 	@include media("print") {
-		min-width: 62em;
-		width: 62em;
-		padding: 0em 5em;
+		padding: 0em 2em;
 		a {
 			color: black;
 		}
@@ -78,8 +80,12 @@ code {
 		padding: 0em 5em 5em 5em;
 	}
 
-	@include media("<tablet") {
+	@include media("<tablet", "screen") {
 		padding: 0em 1em 5em 1em;
+	}
+
+	@include media("print") {
+		padding: 0em 1em 2em 1em;
 	}
 }
 
@@ -101,8 +107,8 @@ code {
 
 
 	@include media(">=tablet", "screen") {
-		padding: 5em 5em 0em 5em;
-		margin: 0;
+		padding: 2em 5em 0em 5em;
+		margin: 5em 0 0 0;
 	}
 
 	@include media("<tablet", "screen") {
@@ -123,7 +129,7 @@ code {
 		padding-right: 8px;
 	}
 
-	@include media("<desktop") {
+	@include media("<desktop", "screen") {
 		div > div{
 			padding-left: 8px;
 		}
@@ -135,8 +141,14 @@ code {
 		list-style-type: none;
 		padding-left: 8px;
 	}
-	@include media(">=desktop") {
+	@include media(">=desktop", "screen") {
 		border-left: 1px solid $line-color;
+	}
+	@include media("print") {
+		border-left: 1px solid $line-color;
+		> div {
+			border-bottom: 1px solid $line-color;
+		}
 	}
 	@include media(">=tablet") {
 		padding-left: 0;
@@ -145,7 +157,7 @@ code {
 			padding-left: 8px;
 		}
 	}
-	@include media("<desktop") {
+	@include media("<desktop", "screen") {
 		div {
 			border-bottom: 0;
 			text-align: left;
