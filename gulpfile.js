@@ -19,8 +19,14 @@ gulp.task('lint', function() {
 // Compile Our Sass
 gulp.task('sass', function() {
     return gulp.src('scss/*.scss')
-        .pipe(sass())
+        .pipe(sass())        
+        .pipe(gulp.dest('css'));
+});
+
+gulp.task('css', function() {
+    return gulp.src('css/*.css')
         .pipe(minify({compatibility: 'ie8'}))
+        .pipe(concat('resume.min.css'))
         .pipe(gulp.dest('css'));
 });
 
@@ -38,7 +44,8 @@ gulp.task('scripts', function() {
 gulp.task('watch', function() {
     // gulp.watch('js/*.js', ['lint', 'scripts']);
     gulp.watch('scss/*.scss', ['sass']);
+    gulp.watch('css/*.css', ['css']);
 });
 
 // Default Task
-gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
+gulp.task('default', ['lint', 'sass', 'css', 'scripts', 'watch']);
