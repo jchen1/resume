@@ -7,6 +7,7 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
+var minify = require('gulp-minify-css');
 
 // Lint Task
 gulp.task('lint', function() {
@@ -19,6 +20,7 @@ gulp.task('lint', function() {
 gulp.task('sass', function() {
     return gulp.src('scss/*.scss')
         .pipe(sass())
+        .pipe(minify({compatibility: 'ie8'}))
         .pipe(gulp.dest('css'));
 });
 
