@@ -24,6 +24,10 @@ code {
   font-family: "Source Code Pro", monospace;
   color: black; }
 
+@media screen and (max-width: 47.99em) {
+  .row {
+    max-width: 100%; } }
+
 .container {
   background-color: #fff;
   margin: 0 auto;
@@ -69,7 +73,9 @@ code {
 
 @media screen and (max-width: 47.99em) {
   .header {
-    padding: 0em 1em 0em 1em; } }
+    padding: 0em 1em 0em 1em; }
+    .header .contact {
+      padding: 0; } }
 
 .body ul {
   margin-top: 0;
