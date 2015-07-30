@@ -18,6 +18,11 @@ $breakpoints: (
   'desktop': 62em
 );
 
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
 body {
 	font-family: $font-stack;
 	font-size: $font-size;
@@ -52,9 +57,7 @@ code {
 }
 
 .row {
-	@include media("<tablet", "screen") {
-		max-width: 100%;
-	}
+	background-clip: padding-box;
 }
 
 .container {
@@ -228,5 +231,5 @@ code {
 		background-color: white;
 		color: black;
 		border-bottom: 1px solid $line-color;
-	}	
+	}
 }

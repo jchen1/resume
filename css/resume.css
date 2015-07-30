@@ -1,3 +1,7 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; }
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 11pt;
@@ -24,9 +28,8 @@ code {
   font-family: "Source Code Pro", monospace;
   color: black; }
 
-@media screen and (max-width: 47.99em) {
-  .row {
-    max-width: 100%; } }
+.row {
+  background-clip: padding-box; }
 
 .container {
   background-color: #fff;
