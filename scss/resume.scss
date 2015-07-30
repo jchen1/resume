@@ -18,6 +18,25 @@ $breakpoints: (
   'desktop': 62em
 );
 
+/* Disable this for color print */
+@include media("print") {
+	.container {
+		a {
+			color: black;
+		}
+	}
+
+	.header {
+		background-color: white;
+		color: black;
+		a {
+			color: black;
+		}
+
+		border-bottom: 1px solid $line-color;
+	}	
+}
+
 body {
 	font-family: $font-stack;
 	font-size: $font-size;
@@ -68,9 +87,6 @@ code {
 
 	@include media("print") {
 		padding: 0;
-		a {
-			color: black;
-		}
 	}
 
 	a {
@@ -114,16 +130,6 @@ code {
 
 	@include media("<tablet", "screen") {
 		padding: 0em 1em 0em 1em;
-	}
-
-	@include media("print") {
-		background-color: white;
-		color: black;
-		a {
-			color: black;
-		}
-
-		border-bottom: 1px solid $line-color;
 	}
 
 }
