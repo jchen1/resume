@@ -9,7 +9,7 @@ body {
       background-color: #fff; } }
 
 @page {
-  min-width: 62em; }
+  min-width: 65em; }
 
 h2 {
   margin: 0.3em 0; }
@@ -30,7 +30,7 @@ code {
   box-sizing: border-box; }
   @media screen {
     .container {
-      max-width: 62em; } }
+      max-width: 65em; } }
 
 @media screen and (min-width: 48em) {
   .container {
@@ -100,7 +100,7 @@ code {
     padding-left: 8px; }
   .sidebar > div {
     border-bottom: 1px solid #aaa; }
-  .sidebar h2 {
+  .sidebar h2, .sidebar p {
     padding-left: 8px; }
 
 @media screen and (max-width: 61.99em) {
@@ -109,8 +109,24 @@ code {
     border-left: 0;
     padding-left: 8px; }
     .sidebar div {
-      border-bottom: 0;
       text-align: left; } }
+
+@media screen and (max-width: 61.99em) and (min-width: 48em) {
+  .sidebar div {
+    border-bottom: 0; } }
+
+@media screen and (max-width: 47.99em) {
+  .sidebar ul {
+    margin: 0;
+    padding: 0; }
+  .sidebar li {
+    display: inline; }
+  .sidebar li:nth-child(n + 2):before {
+    content: "\2022  "; }
+  .sidebar h2 {
+    padding-left: 0; }
+  .sidebar > div {
+    padding-bottom: 0.5em; } }
 
 .line {
   border-bottom: 1px solid #aaa; }

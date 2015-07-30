@@ -31,7 +31,7 @@ body {
 }
 
 @page {
-	min-width: 62em;
+	min-width: 65em;
 }
 
 h2 {
@@ -57,7 +57,7 @@ code {
 	box-sizing: border-box;
 
 	@include media("screen") {
-		max-width: 62em;
+		max-width: 65em;
 	}
 
 	@include media(">=tablet", "screen") {
@@ -156,7 +156,7 @@ code {
 	> div {
 		border-bottom: 1px solid $line-color;
 	}
-	h2 {
+	h2, p {
 		padding-left: 8px;
 	}
 	@include media("<desktop", "screen") {
@@ -164,8 +164,34 @@ code {
 		border-left: 0;
 		padding-left: 8px;
 		div {
-			border-bottom: 0;
 			text-align: left;
+		}
+	}
+
+	@include media("<desktop", ">=tablet", "screen") {
+		div {
+			border-bottom: 0;
+		}
+	}
+
+	@include media("<tablet", "screen") {
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			display: inline;
+		}
+
+		li:nth-child(n + 2):before {
+			content: "\2022  ";
+		}
+
+		h2 {
+			padding-left: 0;
+		}
+		>div {
+			padding-bottom: 0.5em;
 		}
 	}
 }
