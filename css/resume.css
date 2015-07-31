@@ -116,17 +116,20 @@ code {
     border-bottom: 0; } }
 
 @media screen and (max-width: 47.99em) {
-  .sidebar ul {
-    margin: 0;
-    padding: 0; }
-  .sidebar li {
-    display: inline; }
-  .sidebar li:nth-child(n + 2):before {
-    content: "\2022  "; }
-  .sidebar h2 {
-    padding-left: 0; }
-  .sidebar > div {
-    padding-bottom: 0.5em; } }
+  .sidebar {
+    box-sizing: content-box;
+    padding-right: 0; }
+    .sidebar ul {
+      margin: 0;
+      padding: 0; }
+    .sidebar li {
+      display: inline; }
+    .sidebar li:nth-child(n + 2):before {
+      content: "\2022  "; }
+    .sidebar h2 {
+      padding-left: 0; }
+    .sidebar > div {
+      padding-bottom: 0.5em; } }
 
 .line {
   border-bottom: 1px solid #aaa; }
