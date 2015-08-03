@@ -1,0 +1,103 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../../fonts/icomoon.eot?-la7thi');
+	src:url('../../fonts/icomoon.eot?#iefix-la7thi') format('embedded-opentype'),
+		url('../../fonts/icomoon.ttf?-la7thi') format('truetype'),
+		url('../../fonts/icomoon.woff?-la7thi') format('woff'),
+		url('../../fonts/icomoon.svg?-la7thi#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class*="icon-"] {
+	font-family: 'icomoon';
+	display: inline-block;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* FA icons don't center properly for some reason */
+	transform: translateY(5%);
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope-o:before {
+	content: "\f003";
+}
+.icon-map-marker:before {
+	content: "\f041";
+}
+.icon-briefcase:before {
+	content: "\f0b1";
+}
+.icon-cloud:before {
+	content: "\f0c2";
+}
+.icon-mobile:before {
+	content: "\f10b";
+}
+.icon-keyboard-o:before {
+	content: "\f11c";
+}
+.icon-code:before {
+	content: "\f121";
+}
+.icon-code-fork:before {
+	content: "\f126";
+}
+.icon-graduation-cap:before {
+	content: "\f19d";
+}
+
+.icon-fw {
+	width: 1.28571429em;
+	text-align: center;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../../fonts/Open-Sans-300/Open-Sans-300.eot');
+  src: url('../../fonts/Open-Sans-300/Open-Sans-300.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Light'),
+       local('Open-Sans-300'),
+       url('../../fonts/Open-Sans-300/Open-Sans-300.woff2') format('woff2'),
+       url('../../fonts/Open-Sans-300/Open-Sans-300.woff') format('woff'),
+       url('../../fonts/Open-Sans-300/Open-Sans-300.ttf') format('truetype'),
+       url('../../fonts/Open-Sans-300/Open-Sans-300.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../../fonts/Open-Sans-regular/Open-Sans-regular.eot');
+  src: url('../../fonts/Open-Sans-regular/Open-Sans-regular.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans'),
+       local('Open-Sans-regular'),
+       url('../../fonts/Open-Sans-regular/Open-Sans-regular.woff2') format('woff2'),
+       url('../../fonts/Open-Sans-regular/Open-Sans-regular.woff') format('woff'),
+       url('../../fonts/Open-Sans-regular/Open-Sans-regular.ttf') format('truetype'),
+       url('../../fonts/Open-Sans-regular/Open-Sans-regular.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../../fonts/Source-Code-Pro-300/Source-Code-Pro-300.eot');
+  src: url('../../fonts/Source-Code-Pro-300/Source-Code-Pro-300.eot?#iefix') format('embedded-opentype'),
+       local('Source Code Pro Light'),
+       local('Source-Code-Pro-300'),
+       url('../../fonts/Source-Code-Pro-300/Source-Code-Pro-300.woff2') format('woff2'),
+       url('../../fonts/Source-Code-Pro-300/Source-Code-Pro-300.woff') format('woff'),
+       url('../../fonts/Source-Code-Pro-300/Source-Code-Pro-300.ttf') format('truetype'),
+       url('../../fonts/Source-Code-Pro-300/Source-Code-Pro-300.svg#SourceCodePro') format('svg');
+}
