@@ -1,6 +1,7 @@
-html, body {
-  max-width: 100%;
-  overflow-x: hidden; }
+@media screen {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden; } }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -144,7 +145,8 @@ code {
     padding-left: 20px;
     margin-bottom: 0; }
   #experience div > ul {
-    padding-left: 40px; }
+    padding-left: 40px;
+    margin-bottom: 10px; }
 
 /* Disable this for color print */
 @media print {

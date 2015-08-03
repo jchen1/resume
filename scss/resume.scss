@@ -18,10 +18,13 @@ $breakpoints: (
   'desktop': 62em
 );
 
-html, body {
-	max-width: 100%;
-	overflow-x: hidden;
+@include media("screen") {
+	html, body {
+		max-width: 100%;
+		overflow-x: hidden;
+	}
 }
+
 
 body {
 	font-family: $font-stack;
@@ -215,6 +218,7 @@ code {
 
 	div > ul {
 		padding-left: 40px;
+		margin-bottom: 10px;
 	}
 	padding-bottom: 0.5em;
 }
