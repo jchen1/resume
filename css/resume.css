@@ -22,8 +22,11 @@ h2 {
 h3 {
   margin: 0.75em 0; }
 
-h1, h2, h3, strong {
+strong {
   font-weight: 400; }
+
+h1, h2, h3 {
+  font-weight: 600; }
 
 code {
   font-family: "Source Code Pro", monospace;
@@ -64,6 +67,7 @@ code {
     color: #fff; }
   .header h1 {
     font-size: 3em;
+    font-weight: 600;
     margin-bottom: 0.5rem; }
   .header ul {
     list-style-type: none;
@@ -99,7 +103,8 @@ code {
   padding-left: 0; }
   .sidebar ul {
     list-style-type: none;
-    padding-left: 8px; }
+    padding-left: 8px;
+    margin-top: 0.75em; }
   .sidebar > div {
     border-bottom: 1px solid #aaa; }
   .sidebar h2, .sidebar p {
@@ -138,10 +143,18 @@ code {
 
 .project {
   padding-bottom: 0.3em; }
+  .project em {
+    font-style: normal;
+    font-weight: 600; }
+
+#projects {
+  margin-bottom: 1em; }
 
 @media screen and (max-width: 61.99em) {
   #projects {
     border-bottom: 1px solid #aaa; } }
+  #projects > div:first-child {
+    margin-bottom: 0.75em; }
 
 #experience {
   padding-bottom: 0.5em; }
@@ -150,7 +163,11 @@ code {
     margin-bottom: 0; }
   #experience div > ul {
     padding-left: 40px;
-    margin-bottom: 10px; }
+    margin: 0.2em 0; }
+  #experience .row em {
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 0.25em; }
 
 /* Disable this for color print */
 @media print {
