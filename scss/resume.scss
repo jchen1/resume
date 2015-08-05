@@ -130,9 +130,13 @@ code {
 	}
 
 	@include media("<tablet", "screen") {
-		padding: 0em 1em 0em 1em;
+		padding: 0.5em 1em;
 		.contact {
 			padding: 0;
+		}
+
+		h1 {
+			font-size: 2em;
 		}
 	}
 
@@ -177,11 +181,16 @@ code {
 		div {
 			text-align: left;
 		}
+		padding-bottom: 1em;
 	}
 
 	@include media("<desktop", ">=tablet", "screen") {
 		div {
 			border-bottom: 0;
+		}
+
+		>div:not(:last-child) {
+			border-right: 1px solid $line-color;
 		}
 	}
 
@@ -204,7 +213,7 @@ code {
 			padding-left: 0;
 		}
 		>div {
-			padding-bottom: 0.5em;
+			padding-bottom: 0.8em;
 		}
 	}
 }
@@ -225,13 +234,14 @@ code {
 #projects {
 	@include media("<desktop", "screen") {
 		border-bottom: 1px solid $line-color;
+		padding-bottom: 0.5em;
 	}
 
 	> div:first-child {
 		margin-bottom: 0.75em;
 	}
 
-	margin-bottom: 1em;
+	padding-bottom: 1em;
 }
 
 #experience {

@@ -82,9 +82,11 @@ code {
 
 @media screen and (max-width: 47.99em) {
   .header {
-    padding: 0em 1em 0em 1em; }
+    padding: 0.5em 1em; }
     .header .contact {
-      padding: 0; } }
+      padding: 0; }
+    .header h1 {
+      font-size: 2em; } }
 
 .body ul {
   margin-top: 0;
@@ -114,13 +116,16 @@ code {
   .sidebar {
     display: flex;
     border-left: 0;
-    padding-left: 8px; }
+    padding-left: 8px;
+    padding-bottom: 1em; }
     .sidebar div {
       text-align: left; } }
 
 @media screen and (max-width: 61.99em) and (min-width: 48em) {
   .sidebar div {
-    border-bottom: 0; } }
+    border-bottom: 0; }
+  .sidebar > div:not(:last-child) {
+    border-right: 1px solid #aaa; } }
 
 @media screen and (max-width: 47.99em) {
   .sidebar {
@@ -136,7 +141,7 @@ code {
     .sidebar h2 {
       padding-left: 0; }
     .sidebar > div {
-      padding-bottom: 0.5em; } }
+      padding-bottom: 0.8em; } }
 
 .line {
   border-bottom: 1px solid #aaa; }
@@ -148,11 +153,12 @@ code {
     font-weight: 600; }
 
 #projects {
-  margin-bottom: 1em; }
+  padding-bottom: 1em; }
 
 @media screen and (max-width: 61.99em) {
   #projects {
-    border-bottom: 1px solid #aaa; } }
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 0.5em; } }
   #projects > div:first-child {
     margin-bottom: 0.75em; }
 
