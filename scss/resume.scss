@@ -61,7 +61,6 @@ h1, h2, h3 {
 
 code {
 	font-family: $monospace-font;
-	color: black;
 }
 
 .container {
@@ -95,6 +94,10 @@ code {
 
 	@include media("<tablet", "screen") {
 		padding: 0em 1em 5em 1em;
+	}
+
+	@include media("screen") {
+		color: #222;
 	}
 }
 

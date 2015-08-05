@@ -29,8 +29,7 @@ h1, h2, h3 {
   font-weight: 600; }
 
 code {
-  font-family: "Source Code Pro", monospace;
-  color: black; }
+  font-family: "Source Code Pro", monospace; }
 
 .container {
   background-color: #fff;
@@ -58,6 +57,9 @@ code {
 @media screen and (max-width: 47.99em) {
   .content {
     padding: 0em 1em 5em 1em; } }
+  @media screen {
+    .content {
+      color: #222; } }
 
 .header {
   background-color: #795548;
