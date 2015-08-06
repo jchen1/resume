@@ -7,11 +7,12 @@ $strong-weight: 400;
 $header-weight: 600;
 $monospace-font: "Source Code Pro", monospace;
 $background-color: #eee;
-$resume-color: #fff;
-$line-color: #aaa;
+$resume-color: #f8f8f8;
 $header-color: #795548;
-$header-text-color: #fff;
+$header-text-color: $resume-color;
+$line-color: #aaa;
 $link-color: #6D4C41;
+$text-color: #222;
 
 $breakpoints: (
   'phone': 30em,
@@ -19,13 +20,32 @@ $breakpoints: (
   'desktop': 62em
 );
 
+$print-resume-color: white;
+
+$print-color: false;
+$print-text-color: black;
+
+@if ($print-color) {
+	$print-header-color: $header-color;
+	$print-link-color: $link-color;
+	$print-header-border: 0;
+}
+@else {
+	$print-header-color: $print-resume-color;
+	$print-link-color: black;
+	$print-header-border: 1px solid $line-color;
+}
+
 @include media("screen") {
 	html, body {
 		max-width: 100%;
 		overflow-x: hidden;
 	}
-}
 
+	.container {
+		max-width: 65em;
+	}
+}
 
 body {
 	font-family: $font-stack;
@@ -33,10 +53,6 @@ body {
 	font-weight: $body-weight;
 	background-color: $background-color;
 	margin: 0;
-
-	@include media("print") {
-		background-color: $resume-color;
-	}
 }
 
 @page {
@@ -68,8 +84,9 @@ code {
 	margin: 0 auto;
 	box-sizing: border-box;
 
-	@include media("screen") {
-		max-width: 65em;
+	a {
+		text-decoration: none;
+		color: $link-color;
 	}
 
 	@include media(">=tablet", "screen") {
@@ -77,32 +94,18 @@ code {
 		margin-top: 2em;
 		margin-bottom: 2em;
 	}
-
-	@include media("print") {
-		padding: 0;
-	}
-
-	a {
-		text-decoration: none;
-		color: $link-color;
-
-	}
 }
 
 .content {
 	padding: 0em 3em;
+	color: $text-color;
 
 	@include media("<tablet", "screen") {
 		padding: 0em 1em 5em 1em;
 	}
-
-	@include media("screen") {
-		color: #222;
-	}
 }
 
 .header {
-
 	background-color: $header-color;
 	color: $header-text-color;
 	padding: 1em 3em;
@@ -127,7 +130,6 @@ code {
 		text-align: right;
 	}
 
-
 	@include media(">=tablet", "screen") {
 		margin: 0;
 	}
@@ -145,7 +147,7 @@ code {
 
 }
 
-.body {
+.left {
 	ul {
 		margin-top: 0;
 		margin-bottom: 0.5em;
@@ -155,14 +157,22 @@ code {
 		padding-right: 8px;
 	}
 
+	> div:not(:last-child) {
+		border-bottom: 1px solid $line-color;
+	}
+
 	@include media("<desktop", "screen") {
 		div > div{
 			padding-left: 8px;
 		}
+
+		> div {
+			border-bottom: 1px solid $line-color;
+		}
 	}
 }
 
-.sidebar {
+.right {
 	display: inline-block;
 	border-left: 1px solid $line-color;
 	padding-left: 0;
@@ -222,11 +232,13 @@ code {
 	}
 }
 
-.line {
-	border-bottom: 1px solid $line-color;
-}
-
 #projects {
+	padding-bottom: 1em;
+
+	> div:first-child {
+		margin-bottom: 0.75em;
+	}
+
 	@include media("<desktop", "screen") {
 		border-bottom: 1px solid $line-color;
 		padding-bottom: 0.5em;
@@ -235,15 +247,11 @@ code {
 			padding-left: 0;
 		}
 	}
-
-	> div:first-child {
-		margin-bottom: 0.75em;
-	}
-
-	padding-bottom: 1em;
 }
 
 #experience {
+	padding-bottom: 0.5em;
+
 	ul {
 		padding-left: 20px;
 		margin-bottom: 0;
@@ -265,8 +273,6 @@ code {
 			padding-left: 0;
 		}
 	}
-
-	padding-bottom: 0.5em;
 }
 
 .project {
@@ -278,16 +284,27 @@ code {
 	}
 }
 
-
-/* Disable this for color print */
 @include media("print") {
+	body {
+		background-color: $print-resume-color;
+	}
+
+	.container {
+		padding: 0;
+	}
+
 	.container a, .header a {
-		color: black;
+		color: $print-link-color;
+	}
+
+	.content {
+		background-color: $print-resume-color;
+		color: $print-text-color;
 	}
 
 	.header {
-		background-color: white;
-		color: black;
-		border-bottom: 1px solid $line-color;
+		background-color: $print-header-color;
+		color: $print-text-color;
+		border-bottom: $print-header-border;
 	}
 }

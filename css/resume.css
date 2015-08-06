@@ -1,7 +1,9 @@
 @media screen {
   html, body {
     max-width: 100%;
-    overflow-x: hidden; } }
+    overflow-x: hidden; }
+  .container {
+    max-width: 65em; } }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -9,9 +11,6 @@ body {
   font-weight: 300;
   background-color: #eee;
   margin: 0; }
-  @media print {
-    body {
-      background-color: #fff; } }
 
 @page {
   min-width: 65em; }
@@ -32,41 +31,33 @@ code {
   font-family: "Source Code Pro", monospace; }
 
 .container {
-  background-color: #fff;
+  background-color: #f8f8f8;
   margin: 0 auto;
   box-sizing: border-box; }
-  @media screen {
-    .container {
-      max-width: 65em; } }
+  .container a {
+    text-decoration: none;
+    color: #6D4C41; }
 
 @media screen and (min-width: 48em) {
   .container {
     box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
     margin-top: 2em;
     margin-bottom: 2em; } }
-  @media print {
-    .container {
-      padding: 0; } }
-  .container a {
-    text-decoration: none;
-    color: #6D4C41; }
 
 .content {
-  padding: 0em 3em; }
+  padding: 0em 3em;
+  color: #222; }
 
 @media screen and (max-width: 47.99em) {
   .content {
     padding: 0em 1em 5em 1em; } }
-  @media screen {
-    .content {
-      color: #222; } }
 
 .header {
   background-color: #795548;
-  color: #fff;
+  color: #f8f8f8;
   padding: 1em 3em; }
   .header a {
-    color: #fff; }
+    color: #f8f8f8; }
   .header h1 {
     font-size: 3em;
     font-weight: 600;
@@ -90,66 +81,70 @@ code {
     .header h1 {
       font-size: 2em; } }
 
-.body ul {
+.left ul {
   margin-top: 0;
   margin-bottom: 0.5em; }
 
-.body div {
+.left div {
   padding-right: 8px; }
 
-@media screen and (max-width: 61.99em) {
-  .body div > div {
-    padding-left: 8px; } }
+.left > div:not(:last-child) {
+  border-bottom: 1px solid #aaa; }
 
-.sidebar {
+@media screen and (max-width: 61.99em) {
+  .left div > div {
+    padding-left: 8px; }
+  .left > div {
+    border-bottom: 1px solid #aaa; } }
+
+.right {
   display: inline-block;
   border-left: 1px solid #aaa;
   padding-left: 0; }
-  .sidebar ul {
+  .right ul {
     list-style-type: none;
     padding-left: 8px;
     margin-top: 0.75em; }
-  .sidebar > div {
+  .right > div {
     border-bottom: 1px solid #aaa; }
-  .sidebar h2, .sidebar p {
+  .right h2, .right p {
     padding-left: 8px; }
 
 @media screen and (max-width: 61.99em) {
-  .sidebar {
+  .right {
     display: flex;
     border-left: 0;
     padding-bottom: 1em; }
-    .sidebar div {
+    .right div {
       text-align: left; } }
 
 @media screen and (max-width: 61.99em) and (min-width: 48em) {
-  .sidebar div {
+  .right div {
     border-bottom: 0; }
-  .sidebar > div:not(:last-child) {
+  .right > div:not(:last-child) {
     border-right: 1px solid #aaa; } }
 
 @media screen and (max-width: 47.99em) {
-  .sidebar {
+  .right {
     box-sizing: content-box;
     padding-right: 0;
     padding-left: 8px; }
-    .sidebar ul {
+    .right ul {
       margin: 0;
       padding: 0; }
-    .sidebar li {
+    .right li {
       display: inline; }
-    .sidebar li:nth-child(n + 2):before {
+    .right li:nth-child(n + 2):before {
       content: "\2022  "; }
-    .sidebar h2 {
+    .right h2 {
       padding-left: 0; }
-    .sidebar > div {
+    .right > div {
       padding-bottom: 0.8em; } }
-
-.line {
-  border-bottom: 1px solid #aaa; }
 
 #projects {
   padding-bottom: 1em; }
+  #projects > div:first-child {
+    margin-bottom: 0.75em; }
 
 @media screen and (max-width: 61.99em) {
   #projects {
@@ -157,8 +152,6 @@ code {
     padding-bottom: 0.5em; }
     #projects .row {
       padding-left: 0; } }
-  #projects > div:first-child {
-    margin-bottom: 0.75em; }
 
 #experience {
   padding-bottom: 0.5em; }
@@ -183,9 +176,15 @@ code {
     font-style: normal;
     font-weight: 600; }
 
-/* Disable this for color print */
 @media print {
+  body {
+    background-color: white; }
+  .container {
+    padding: 0; }
   .container a, .header a {
+    color: black; }
+  .content {
+    background-color: white;
     color: black; }
   .header {
     background-color: white;
