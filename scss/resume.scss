@@ -180,7 +180,6 @@ code {
 	@include media("<desktop", "screen") {
 		display: flex;
 		border-left: 0;
-		padding-left: 8px;
 		div {
 			text-align: left;
 		}
@@ -200,6 +199,8 @@ code {
 	@include media("<tablet", "screen") {
 		box-sizing: content-box;
 		padding-right: 0;
+		padding-left: 8px;
+
 		ul {
 			margin: 0;
 			padding: 0;
@@ -225,19 +226,14 @@ code {
 	border-bottom: 1px solid $line-color;
 }
 
-.project {
-	padding-bottom: 0.3em;
-
-	em {
-		font-style: normal;
-		font-weight: $header-weight;
-	}
-}
-
 #projects {
 	@include media("<desktop", "screen") {
 		border-bottom: 1px solid $line-color;
 		padding-bottom: 0.5em;
+
+		.row {
+			padding-left: 0;
+		}
 	}
 
 	> div:first-child {
@@ -262,10 +258,26 @@ code {
 		font-style: normal;
 		font-weight: $header-weight;
 		margin-bottom: 0.25em;
-	}	
+	}
+
+	@include media("<desktop", "screen") {
+		.row {
+			padding-left: 0;
+		}
+	}
 
 	padding-bottom: 0.5em;
 }
+
+.project {
+	padding-bottom: 0.3em;
+
+	em {
+		font-style: normal;
+		font-weight: $header-weight;
+	}
+}
+
 
 /* Disable this for color print */
 @include media("print") {
