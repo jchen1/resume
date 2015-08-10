@@ -19,7 +19,7 @@ h2 {
   margin: 0.3em 0; }
 
 h3 {
-  margin: 0.75em 0; }
+  margin: 0.5em 0; }
 
 strong {
   font-weight: 400; }
@@ -36,7 +36,7 @@ code {
   box-sizing: border-box; }
   .container a {
     text-decoration: none;
-    color: #6D4C41; }
+    color: #896052; }
 
 @media screen and (min-width: 48em) {
   .container {
@@ -161,6 +161,8 @@ code {
   #experience div > ul {
     padding-left: 40px;
     margin: 0.2em 0; }
+  #experience p {
+    margin: 0.5em 0; }
   #experience .row em {
     font-style: normal;
     font-weight: 600;

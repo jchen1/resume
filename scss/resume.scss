@@ -11,7 +11,7 @@ $resume-color: #f8f8f8;
 $header-color: #795548;
 $header-text-color: $resume-color;
 $line-color: #aaa;
-$link-color: #6D4C41;
+$link-color: lighten($header-color, 5%);
 $text-color: #222;
 
 $breakpoints: (
@@ -64,7 +64,7 @@ h2 {
 }
 
 h3 {
-	margin: 0.75em 0;
+	margin: 0.5em 0;
 }
 
 strong {
@@ -260,6 +260,10 @@ code {
 	div > ul {
 		padding-left: 40px;
 		margin: 0.2em 0;
+	}
+
+	p {
+		margin: 0.5em 0;
 	}
 
 	.row em {

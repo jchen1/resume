@@ -3,8 +3,8 @@ svg[class*="icon-"] {
 	width: 1em;
   height: 1em;
   fill: currentColor;
-  /* Icomoon doesn't vertically center fontawesome icons properly*/
-  transform: translateY(5%);
+  /* Icomoon doesn't vertically center fontawesome icons properly */
+  transform: translateY(10%);
 }
 
 .icon-fw {
