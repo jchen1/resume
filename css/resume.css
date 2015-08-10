@@ -183,7 +183,9 @@ code {
     background-color: white; }
   .container {
     padding: 0; }
-  .container a, .header a {
+  .container a {
+    color: black; }
+  .header a {
     color: black; }
   .content {
     background-color: white;
