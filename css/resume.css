@@ -6,7 +6,7 @@
     max-width: 65em; } }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "PT Serif", serif;
   font-size: 11pt;
   font-weight: 300;
   background-color: #eee;
@@ -26,6 +26,9 @@ strong {
 
 h1, h2, h3 {
   font-weight: 600; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif; }
 
 code {
   font-family: "Source Code Pro", monospace; }

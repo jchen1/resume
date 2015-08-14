@@ -1,6 +1,7 @@
 @import 'include-media';
 
-$font-stack: "Open Sans", sans-serif;
+$heading-font-stack: "Raleway", sans-serif;
+$font-stack: "PT Serif", serif;
 $font-size: 11pt;
 $body-weight: 300;
 $strong-weight: 400;
@@ -75,6 +76,10 @@ strong {
 
 h1, h2, h3 {
 	font-weight: $header-weight;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $heading-font-stack;
 }
 
 code {
