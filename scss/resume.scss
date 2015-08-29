@@ -8,11 +8,14 @@ $header-weight: 600;
 $monospace-font: "Source Code Pro", monospace;
 $background-color: #eee;
 $resume-color: #f8f8f8;
-$header-color: #795548;
-$header-text-color: $resume-color;
+$header-color: $resume-color;
 $line-color: #aaa;
-$link-color: lighten($header-color, 5%);
 $text-color: #222;
+
+$header-text-color: $text-color;
+$link-color: $text-color;
+
+
 
 $breakpoints: (
   'phone': 30em,
@@ -99,18 +102,49 @@ code {
 }
 
 .content {
-	padding: 0em 3em;
+	padding: 3em 5em;
 	color: $text-color;
+
+	.header-pre {
+		border-bottom: 1px solid $line-color;
+		transform: translateY(-50%);
+		padding-right: 2em;
+		margin-right: .3em;
+	}
+
+	h2 {
+		text-transform: uppercase;
+		font-size: 1em;
+		font-weight: 300;
+	}
+
+	.header-post {
+		border-bottom: 1px solid $line-color;
+		flex-grow: 1;
+		transform: translateY(-50%);
+		margin-left: .3em;
+	}
 
 	@include media("<tablet", "screen") {
 		padding: 0em 1em 5em 1em;
+	}
+
+	@include media("<desktop", "screen") {
+		-webkit-align-items: flex-end;
+		-ms-flex-align: end;
+		align-items: flex-end;
+	}
+}
+
+.contact {
+	@include media("<desktop", "screen") {
+		text-align: right;
 	}
 }
 
 .header {
 	background-color: $header-color;
 	color: $header-text-color;
-	padding: 1em 3em;
 
 	a {
 		color: $header-text-color;
@@ -119,17 +153,7 @@ code {
 	h1 {
 		font-size: 3em;
 		font-weight: $header-weight;
-		margin-bottom: 0.5rem;
-	}
-
-	ul {
-		list-style-type: none;
-		padding-left: 0;
-		margin-bottom: 0.5rem;
-	}
-
-	.contact {
-		text-align: right;
+		margin: 1rem 0;
 	}
 
 	@include media(">=tablet", "screen") {
@@ -137,101 +161,28 @@ code {
 	}
 
 	@include media("<tablet", "screen") {
-		padding: 0.5em 1em;
-		.contact {
-			padding: 0;
-		}
-
 		h1 {
 			font-size: 2em;
 		}
 	}
-
 }
 
 .left {
 	ul {
-		margin-top: 0;
-		margin-bottom: 0.5em;
+		list-style-type: none;
+		text-align: right;
 	}
 
-	div {
-		padding-right: 8px;
-	}
+	padding-right: 1rem;
 
-	> div:not(:last-child) {
-		border-bottom: 1px solid $line-color;
-	}
 
-	@include media("<desktop", "screen") {
-		div > div{
-			padding-left: 8px;
-		}
-
-		> div {
-			border-bottom: 1px solid $line-color;
-		}
+	@include media("<desktop") {
+		padding-right: 0;
 	}
 }
 
 .right {
-	display: inline-block;
-	border-left: 1px solid $line-color;
-	padding-left: 0;
-	ul {
-		list-style-type: none;
-		padding-left: 8px;
-		margin-top: 0.75em;
-	}
-	> div {
-		border-bottom: 1px solid $line-color;
-	}
-	h2, p {
-		padding-left: 8px;
-	}
-	@include media("<desktop", "screen") {
-		display: flex;
-		border-left: 0;
-		div {
-			text-align: left;
-		}
-		padding-bottom: 1em;
-	}
-
-	@include media("<desktop", ">=tablet", "screen") {
-		div {
-			border-bottom: 0;
-		}
-
-		>div:not(:last-child) {
-			border-right: 1px solid $line-color;
-		}
-	}
-
-	@include media("<tablet", "screen") {
-		box-sizing: content-box;
-		padding-right: 0;
-		padding-left: 8px;
-
-		ul {
-			margin: 0;
-			padding: 0;
-		}
-		li {
-			display: inline;
-		}
-
-		li:nth-child(n + 2):before {
-			content: "\2022  ";
-		}
-
-		h2 {
-			padding-left: 0;
-		}
-		>div {
-			padding-bottom: 0.8em;
-		}
-	}
+	padding-left: 1rem;
 }
 
 #projects {
@@ -242,7 +193,7 @@ code {
 	}
 
 	@include media("<desktop", "screen") {
-		border-bottom: 1px solid $line-color;
+		// border-bottom: 1px solid $line-color;
 		padding-bottom: 0.5em;
 
 		.row {
@@ -281,6 +232,32 @@ code {
 	}
 }
 
+#skills {
+
+	ul {
+		margin: 0;
+		padding-bottom: .5em;
+	}
+
+	strong {
+		margin: 0;
+		padding-bottom: .5em;
+	}
+
+	li {
+		display: inline;
+	}
+
+	li:nth-child(n+2):before {
+		content: "\2022  ";
+	}
+
+	>div {
+		padding-left: 0;
+	}
+
+}
+
 .project {
 	padding-bottom: 0.3em;
 
@@ -315,6 +292,6 @@ code {
 	.header {
 		background-color: $print-header-color;
 		color: $print-header-text-color;
-		border-bottom: $print-header-border;
+		// border-bottom: $print-header-border;
 	}
 }
