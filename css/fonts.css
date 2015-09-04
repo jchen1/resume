@@ -12,59 +12,59 @@ svg[class*="icon-"] {
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  font-weight: 300;
-  font-style: normal;
-  src: url('../../fonts/Open-Sans-300/Open-Sans-300.eot');
-  src: url('../../fonts/Open-Sans-300/Open-Sans-300.eot?#iefix') format('embedded-opentype'),
-       local('Open Sans Light'),
-       local('Open-Sans-300'),
-       url('../../fonts/Open-Sans-300/Open-Sans-300.woff2') format('woff2'),
-       url('../../fonts/Open-Sans-300/Open-Sans-300.woff') format('woff'),
-       url('../../fonts/Open-Sans-300/Open-Sans-300.ttf') format('truetype'),
-       url('../../fonts/Open-Sans-300/Open-Sans-300.svg#OpenSans') format('svg');
-}
-
-@font-face {
-  font-family: 'Open Sans';
+  font-family: 'Lora';
   font-weight: 400;
   font-style: normal;
-  src: url('../../fonts/Open-Sans-regular/Open-Sans-regular.eot');
-  src: url('../../fonts/Open-Sans-regular/Open-Sans-regular.eot?#iefix') format('embedded-opentype'),
-       local('Open Sans'),
-       local('Open-Sans-regular'),
-       url('../../fonts/Open-Sans-regular/Open-Sans-regular.woff2') format('woff2'),
-       url('../../fonts/Open-Sans-regular/Open-Sans-regular.woff') format('woff'),
-       url('../../fonts/Open-Sans-regular/Open-Sans-regular.ttf') format('truetype'),
-       url('../../fonts/Open-Sans-regular/Open-Sans-regular.svg#OpenSans') format('svg');
+  src: url('../../fonts/Lora-regular/Lora-regular.eot');
+  src: url('../../fonts/Lora-regular/Lora-regular.eot?#iefix') format('embedded-opentype'),
+       local('Lora'),
+       local('Lora-regular'),
+       url('../../fonts/Lora-regular/Lora-regular.woff2') format('woff2'),
+       url('../../fonts/Lora-regular/Lora-regular.woff') format('woff'),
+       url('../../fonts/Lora-regular/Lora-regular.ttf') format('truetype'),
+       url('../../fonts/Lora-regular/Lora-regular.svg#Lora') format('svg');
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  font-weight: 600;
+  font-family: 'Lora';
+  font-weight: 700;
   font-style: normal;
-  src: url('../../fonts/Open-Sans-600/Open-Sans-600.eot');
-  src: url('../../fonts/Open-Sans-600/Open-Sans-600.eot?#iefix') format('embedded-opentype'),
-       local('Open Sans Semibold'),
-       local('Open-Sans-600'),
-       url('../../fonts/Open-Sans-600/Open-Sans-600.woff2') format('woff2'),
-       url('../../fonts/Open-Sans-600/Open-Sans-600.woff') format('woff'),
-       url('../../fonts/Open-Sans-600/Open-Sans-600.ttf') format('truetype'),
-       url('../../fonts/Open-Sans-600/Open-Sans-600.svg#OpenSans') format('svg');
+  src: url('../../fonts/Lora-700/Lora-700.eot');
+  src: url('../../fonts/Lora-700/Lora-700.eot?#iefix') format('embedded-opentype'),
+       local('Lora Bold'),
+       local('Lora-700'),
+       url('../../fonts/Lora-700/Lora-700.woff2') format('woff2'),
+       url('../../fonts/Lora-700/Lora-700.woff') format('woff'),
+       url('../../fonts/Lora-700/Lora-700.ttf') format('truetype'),
+       url('../../fonts/Lora-700/Lora-700.svg#Lora') format('svg');
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  font-weight: 600;
+  font-family: 'Lora';
+  font-weight: 400;
   font-style: italic;
-  src: url('../../fonts/Open-Sans-600italic/Open-Sans-600italic.eot');
-  src: url('../../fonts/Open-Sans-600italic/Open-Sans-600italic.eot?#iefix') format('embedded-opentype'),
-       local('Open Sans Semibold Italic'),
-       local('Open-Sans-600italic'),
-       url('../../fonts/Open-Sans-600italic/Open-Sans-600italic.woff2') format('woff2'),
-       url('../../fonts/Open-Sans-600italic/Open-Sans-600italic.woff') format('woff'),
-       url('../../fonts/Open-Sans-600italic/Open-Sans-600italic.ttf') format('truetype'),
-       url('../../fonts/Open-Sans-600italic/Open-Sans-600italic.svg#OpenSans') format('svg');
+  src: url('../../fonts/Lora-italic/Lora-italic.eot');
+  src: url('../../fonts/Lora-italic/Lora-italic.eot?#iefix') format('embedded-opentype'),
+       local('Lora Italic'),
+       local('Lora-italic'),
+       url('../../fonts/Lora-italic/Lora-italic.woff2') format('woff2'),
+       url('../../fonts/Lora-italic/Lora-italic.woff') format('woff'),
+       url('../../fonts/Lora-italic/Lora-italic.ttf') format('truetype'),
+       url('../../fonts/Lora-italic/Lora-italic.svg#Lora') format('svg');
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../../fonts/Josefin-Sans-700/Josefin-Sans-700.eot');
+  src: url('../../fonts/Josefin-Sans-700/Josefin-Sans-700.eot?#iefix') format('embedded-opentype'),
+       local('Josefin Sans Bold'),
+       local('Josefin-Sans-700'),
+       url('../../fonts/Josefin-Sans-700/Josefin-Sans-700.woff2') format('woff2'),
+       url('../../fonts/Josefin-Sans-700/Josefin-Sans-700.woff') format('woff'),
+       url('../../fonts/Josefin-Sans-700/Josefin-Sans-700.ttf') format('truetype'),
+       url('../../fonts/Josefin-Sans-700/Josefin-Sans-700.svg#JosefinSans') format('svg');
 }
 
 

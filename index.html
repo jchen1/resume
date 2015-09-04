@@ -47,11 +47,12 @@
     </defs>
   </svg>
   <div class="container">
-    <div class="header row bottom-xs between-xs">
-      <div class="col-xs-6">
+
+    <div class="content row">
+      <div class="header col-md-12 col-sm-6 col-xs-6">
         <h1>Jeff Chen</h1>
       </div>
-      <div class="contact col-xs-6">
+      <div class="contact col-sm-6 col-xs-6 left">
         <ul>
           <li>
             <a href="mailto:jeffrey@cmu.edu">jeffrey@cmu.edu</a>&nbsp;<svg class="icon-envelope-o icon-fw"><use xlink:href="#icon-envelope-o"></use></svg>
@@ -67,197 +68,165 @@
           </li>
         </ul>
       </div>
-    </div>
-    <div class="content row">
-      <div class="col-md-9 left">
+      <div class="col-sm-12 col-xs-12 right">
         <div id="education">
-          <div><h2><svg class="icon-graduation-cap icon-fw"><use xlink:href="#icon-graduation-cap"></use></svg>&nbsp;Education</h2></div>
+          <div class="row">
+            <div class="header-pre"></div>
+            <h2><svg class="icon-graduation-cap icon-fw"><use xlink:href="#icon-graduation-cap"></use></svg>&nbsp;Education</h2>
+            <div class="header-post"></div>
+          </div>
           <div>
-            <h3><a href="http://www.cmu.edu" target="_blank">Carnegie Mellon Class of 2016</a> &mdash; <em>B.S. Computer Science</em> &mdash; 3.4/4.0</h3>
+            <h3><a href="http://www.cmu.edu" target="_blank">Carnegie Mellon Class of 2016</a> &mdash; <span><em>B.S. Computer Science</em> &mdash; 3.4/4.0</span></h3>
             <ul>
               <li>Minor in Human-Computer Interaction</li>
               <li>Relevant coursework: Algorithm Design and Analysis, Cloud Computing, Cognitive Robotics, Complexity Theory, Human-Robot Interaction, Interaction Design Overview, Science of the Web</li>
+              <li>Track and field school record holder</li>
             </ul>
           </div>
         </div>
 
         <div id="experience">
-          <div><h2><svg class="icon-briefcase icon-fw"><use xlink:href="#icon-briefcase"></use></svg>&nbsp;Experience</h2></div>
+          <div class="row">
+            <div class="header-pre"></div>
+            <h2><svg class="icon-briefcase icon-fw"><use xlink:href="#icon-briefcase"></use></svg>&nbsp;Experience</h2>
+            <div class="header-post"></div>
+          </div>
           <div>
             <h3><a href="https://www.nsa.gov" target="_blank">National Security Agency</a> &mdash; <em>Stokes Scholar</em></h3>
             <p>Holder of TS//SCI clearance with special background investigation and polygraph</p>
 
-            <div class="row">
-              <div class="col-md-2 col-xs-12"><strong>Summer 2015</strong></div>
-              <div class="col-md-10 col-xs-12">
-                <em>Trusted Systems</em>
-                <ul>
-                  <li>Designed and implemented a software keyboard for Android devices that operates in the <a href="http://www.arm.com/products/processors/technologies/trustzone/" target="_blank">TrustZone secure environment</a></li>
-                  <li>
-                    Ported <a href="http://linux-ima.sourceforge.net/" target="_blank">IMA (Integrity Measurement Architecture)</a> to Android
-                    <ul>
-                      <li>Partially implemented the <a href="http://www.trustedcomputinggroup.org/resources/trusted_platform_module_tpm_summary" target="_blank">Trusted Platform Module (TPM)</a> standard in the TrustZone secure environment</li>
-                      <li>Developed a kernel driver to interface with the software TPM</li>
-                      <li>Created a TrustZone secure application to sign and certify the IMA measurement list</li>
-                      <li>Created a system service enabling Android remote attestation</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <strong>Summer 2015</strong> &mdash; <em>Trusted Systems</em>
 
-            <div class="row">
-              <div class="col-md-2 col-xs-12"><strong>Summer 2014</strong></div>
-              <div class="col-md-10 col-xs-12">
-                <em>Data Network Technologies</em>
+            <ul>
+              <li>Designed and implemented a software keyboard for Android devices that operates in the <a href="http://www.arm.com/products/processors/technologies/trustzone/" target="_blank">TrustZone secure environment</a></li>
+              <li>
+                Ported <a href="http://linux-ima.sourceforge.net/" target="_blank">IMA (Integrity Measurement Architecture)</a> to Android
                 <ul>
-                  <li>Designed and developed CNE operations tool for collection of computer-to-computer communications</li>
-                  <li>Designed and implemented secure communications protocol</li>
+                  <li>Partially implemented the <a href="http://www.trustedcomputinggroup.org/resources/trusted_platform_module_tpm_summary" target="_blank">Trusted Platform Module (TPM)</a> standard in the TrustZone secure environment</li>
+                  <li>Developed a kernel driver to interface with the software TPM</li>
+                  <li>Wrote a secure application to cryptographically sign the IMA measurement list</li>
+                  <li>Created a system service enabling Android remote attestation</li>
                 </ul>
-              </div>
-            </div>
+              </li>
+            </ul>
 
-            <div class="row">
-              <div class="col-md-2 col-xs-12"><strong>Summer 2013</strong></div>
-              <div class="col-md-10 col-xs-12">
-                <em>Remote & Deployed Operations</em>
+            <strong>Summer 2014</strong> &mdash; <em>Data Network Technologies</em>
+
+            <ul>
+              <li>Designed and developed CNE operations tool for collection of computer-to-computer communications</li>
+              <li>Designed and implemented secure communications protocol</li>
+            </ul>
+
+            <strong>Summer 2013</strong> &mdash; <em>Remote & Deployed Operations</em>
+
+            <ul>
+              <li>
+                Developed Windows anti-malware software
                 <ul>
-                  <li>
-                    Developed Windows anti-malware software
-                    <ul>
-                      <li>Used infection markers to enable lightweight, fast, and accurate detection and neutralization of known malware</li>
-                      <li>Heuristically analyzed and tagged potential infection markers</li>
-                    </ul>
-                  </li>
-                  <li>
-                    Created an intuitive network traffic visualizer, allowing analysts to more easily notice anomalous behavior
-                  </li>
+                  <li>Used infection markers to enable lightweight, fast, and accurate detection and neutralization of known malware</li>
+                  <li>Heuristically analyzed and tagged potential infection markers</li>
                 </ul>
-              </div>
-            </div>
-
+              </li>
+              <li>
+                Created an intuitive network traffic visualizer, allowing analysts to more easily notice anomalous behavior
+              </li>
+            </ul>
           </div>
         </div>
         <div id="projects">
-          <div><h2><svg class="icon-code icon-fw"><use xlink:href="#icon-code"></use></svg>&nbsp;Projects</h2></div>
-          <div>
-          <div class="row project" id="rdis">
-              <div class="col-md-2 col-xs-12">
-                <strong>Aug 2015</strong>
-              </div>
-              <div class="col-md-10 col-xs-12">
-                  Developed an <em><a href="https://github.com/iambald/rdis" target="_blank">x86/x64 disassembler library</a></em> in Rust.
-              </div>
+          <div class="row">
+            <div class="header-pre"></div>
+            <h2><svg class="icon-code icon-fw"><use xlink:href="#icon-code"></use></svg>&nbsp;Selected Projects</h2>
+            <div class="header-post"></div>
           </div>
+          <div>
             <div class="row project" id="espresso">
-                <div class="col-md-2 col-xs-12">
+                <div class="col-md-2 col-sm-2 col-xs-12">
                   <strong>April 2015</strong>
                 </div>
-                <div class="col-md-10 col-xs-12">
+                <div class="col-md-10 col-sm-10 col-xs-12">
                     Created <em><a href="https://github.com/jczhang/espresso" target="_blank">espresso</a></em>, a deep learning framework designed to produce maintainable yet highly performant code compatible with <a href="http://caffe.berkeleyvision.org/" target="_blank">Caffe</a>.
                 </div>
             </div>
-            <div class="row project" id="ties">
-                <div class="col-md-2 col-xs-12">
-                  <strong>July 2014</strong>
-                </div>
-                <div class="col-md-10 col-xs-12">
-                    Wrote <em><a href="https://github.com/iambald/myCircle" target="_blank">Ties</a></em>, an Android application that helps people stay in touch.
-                </div>
-            </div>
-            <div class="row project" id="depth">
-                <div class="col-md-2 col-xs-12">
-                  <strong>April 2014</strong>
-                </div>
-                <div class="col-md-10 col-xs-12">
-                    Implemented <em><a href="https://github.com/iambald/depth" target="_blank">computer stereo vision</a></em> using semi-global block matching.
-                </div>
-            </div>
             <div class="row project" id="miniplay">
-                <div class="col-md-2 col-xs-12">
+                <div class="col-md-2 col-sm-2 col-xs-12">
                   <strong>Feb 2014</strong>
                 </div>
-                <div class="col-md-10 col-xs-12">
-                    Created <em><a href="https://github.com/iambald/MiniPlay" target="_blank">MiniPlay</a></em>, a Chrome extension for web music players with over 1000 daily users.
+                <div class="col-md-10 col-sm-10 col-xs-12">
+                    Created <em><a href="https://github.com/iambald/MiniPlay" target="_blank">MiniPlay</a></em>, a Chrome extension adding functionality to web music players with over 1000 daily users.
                 </div>
             </div>
             <div class="row project" id="threadpool">
-                <div class="col-md-2 col-xs-12">
+                <div class="col-md-2 col-sm-2 col-xs-12">
                   <strong>Aug 2013</strong>
                 </div>
-                <div class="col-md-10 col-xs-12">
+                <div class="col-md-10 col-sm-10 col-xs-12">
                     Built a <em><a href="https://github.com/iambald/threadpool" target="_blank">dynamic threadpool</a></em> in modern C++11 to fill the gap in the C++ STL between <code>std::async</code> and <code>std::thread</code>.
                 </div>
             </div>
-            <div class="row project" id="skein">
-                <div class="col-md-2 col-xs-12">
-                  <strong>April 2013</strong>
-                </div>
-                <div class="col-md-10 col-xs-12">
-                    Wrote a high-performance Skein-1024 (SHA-3 candidate) <em><a href="https://github.com/iambald/Skein" target="_blank">hash cracker</a></em> for the <a href="http://xkcd.com/1193" target="_blank">xkcd Alma Mater challenge</a>.
-                </div>
-            </div>
-            <div class="row project" id="chroma">
-                <div class="col-md-2 col-xs-12">
-                  <strong>Sept 2012</strong>
-                </div>
-                <div class="col-md-10 col-xs-12">
-                    Developed <em><a href="https://github.com/iambald/Chroma" target="_blank">Chroma</a></em>, an Android application designed to help colorblind people distinguish between the entire color spectrum.
-                </div>
-            </div>
             <div class="row project" id="avbotz">
-                <div class="col-md-2 col-xs-12">
+                <div class="col-md-2 col-sm-2 col-xs-12">
                   <strong>2010-2012</strong>
                 </div>
-                <div class="col-md-10 col-xs-12">
+                <div class="col-md-10 col-sm-10 col-xs-12">
                     Led development of <em><a href="https://github.com/avbotz/eva-public" target="_blank">eva</a></em>, software for an autonomous submarine, incorporating computer vision, state machines, and control systems.
                 </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-3 col-xs-12 center-sm start-md right row">
+        <div id="skills">
+          <div class="row">
+            <div class="header-pre"></div>
+            <h2><svg class="icon-fw icon-code-fork"><use xlink:href="#icon-code-fork"></use></svg>&nbsp;Skills</h2>
+            <div class="header-post"></div>
+          </div>
+          <div class="col-xs-12">
+            <div class="row">
+              <strong class="col-md-2 col-sm-2 col-xs-12">Languages</strong>
+              <ul class="col-md-10 col-sm-10 col-xs-12">
+                <li>C++14</li>
+                <li>C</li>
+                <li>Java</li>
+                <li>Javascript</li>
+                <li>Python</li>
+                <li>x86</li>
+                <li>Rust</li>
+              </ul>
 
-        <div class="col-md-12 col-sm-4 col-xs-12">
-          <div><h2><svg class="icon-fw icon-keyboard-o"><use xlink:href="#icon-keyboard-o"></use></svg>&nbsp;Languages</h2></div>
-          <ul>
-            <li>C++14</li>
-            <li>C</li>
-            <li>Java</li>
-            <li>Javascript</li>
-            <li>Python</li>
-            <li>x86</li>
-            <li>Rust</li>
-          </ul>
+            </div>
 
+          </div>
+          <div class="col-xs-12">
+            <div class="row">
+              <strong class="col-md-2 col-sm-2 col-xs-12">Technologies</strong>
+              <ul class="col-md-10 col-sm-10 col-xs-12">
+                <li>Cryptosystem design</li>
+                <li>*nix kernel development</li>
+                <li>OpenMP/Open MPI</li>
+                <li>SIMD</li>
+                <li>CUDA/OpenCL</li>
+                <li>OpenCV</li>
+                <li>Embedded systems</li>
+              </ul>
+
+            </div>
+
+          </div>
+          <div class="col-xs-12">
+            <div class="row">
+              <strong class="col-md-2 col-sm-2 col-xs-12">Internet</strong>
+              <ul class="col-md-10 col-sm-10 col-xs-12">
+                <li>HTML</li>
+                <li>SASS/CSS</li>
+                <li>Angular.js</li>
+                <li>Node.js</li>
+                <li>Socket.IO</li>
+                <li>jQuery</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="col-md-12 col-sm-4 col-xs-12">
-          <div><h2><svg class="icon-fw icon-code-fork"><use xlink:href="#icon-code-fork"></use></svg>&nbsp;Technologies</h2></div>
-          <ul>
-            <li>Cryptosystem design</li>
-            <li>*nix kernel development</li>
-            <li>OpenMP/Open MPI</li>
-            <li>SIMD</li>
-            <li>CUDA/OpenCL</li>
-            <li>OpenCV</li>
-            <li>Embedded systems</li>
-          </ul>
-
-        </div>
-        <div class="col-md-12 col-sm-4 col-xs-12">
-          <div><h2><svg class="icon-fw icon-cloud"><use xlink:href="#icon-cloud"></use></svg>&nbsp;Internet</h2></div>
-          <ul>
-            <li>HTML</li>
-            <li>SASS/CSS</li>
-            <li>Angular.js</li>
-            <li>Node.js</li>
-            <li>Socket.IO</li>
-            <li>jQuery</li>
-            <li>MongoDB</li>
-          </ul>
-
-        </div>
-
       </div>
     </div>
   </div>
