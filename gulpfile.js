@@ -1,5 +1,5 @@
 // Include gulp
-var gulp = require('gulp'); 
+var gulp = require('gulp');
 
 // Include Our Plugins
 var jshint = require('gulp-jshint');
@@ -9,6 +9,7 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var minify = require('gulp-minify-css');
 var uncss = require('gulp-uncss');
+var autoprefixer = require('gulp-autoprefixer');
 
 // Lint Task
 gulp.task('lint', function() {
@@ -20,7 +21,8 @@ gulp.task('lint', function() {
 // Compile Our Sass
 gulp.task('sass', function() {
     return gulp.src('scss/*.scss')
-        .pipe(sass())        
+        .pipe(sass())
+        .pipe(autoprefixer({browsers:['> 1%'], cascade: false}))
         .pipe(gulp.dest('css'));
 });
 

@@ -49,7 +49,7 @@ $print-text-color: black;
 	}
 
 	.container {
-		max-width: 65em;
+		max-width: 66em;
 	}
 }
 
@@ -64,7 +64,8 @@ body {
 }
 
 @page {
-	min-width: 65em;
+	size: US-Letter;
+	margin: 0mm;
 }
 
 h2 {
@@ -119,6 +120,7 @@ code {
 	.header-pre {
 		border-bottom: 1px solid $line-color;
 		transform: translateY(-50%);
+
 		padding-right: 2em;
 		margin-right: .3em;
 	}
@@ -126,6 +128,7 @@ code {
 	h2 {
 		text-transform: uppercase;
 		font-size: 1em;
+		letter-spacing: .12em;
 	}
 
 	.header-post {
@@ -161,18 +164,15 @@ code {
 	}
 
 	h1 {
-		font-size: 3em;
+		font-size: 2em;
 		font-weight: $header-weight;
 		margin: 1rem 0;
 	}
 
 	@include media(">=tablet", "screen") {
 		margin: 0;
-	}
-
-	@include media("<tablet", "screen") {
 		h1 {
-			font-size: 2em;
+			font-size: 3em;
 		}
 	}
 }
@@ -185,8 +185,6 @@ code {
 	}
 
 	@include media(">=desktop") {
-		-webkit-flex-basis: 20%;
-		-ms-flex-preferred-size: 20%;
 		flex-basis: 20%;
 		max-width: 20%;
 	}
@@ -198,8 +196,6 @@ code {
 
 .right {
 	@include media(">=desktop") {
-		-webkit-flex-basis: 80%;
-		-ms-flex-preferred-size: 80%;
 		flex-basis: 80%;
 		max-width: 80%;
 
@@ -215,7 +211,6 @@ code {
 	}
 
 	@include media("<desktop", "screen") {
-		// border-bottom: 1px solid $line-color;
 		padding-bottom: 0.5em;
 
 		.row {
@@ -229,6 +224,9 @@ code {
 
 	ul {
 		margin-bottom: 0;
+		a {
+			text-decoration: underline;
+		}
 	}
 
 	div > ul {
@@ -291,9 +289,19 @@ code {
 	}
 }
 
+svg[class*="icon-"] {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+	/* Icomoon doesn't vertically center fontawesome icons properly */
+	transform: translateY(10%);
+}
+
 @include media("print") {
 	body {
 		background-color: $print-resume-color;
+		margin: 0;
 	}
 
 	.container {
@@ -302,6 +310,7 @@ code {
 
 	.container a {
 		color: $print-link-color;
+		text-decoration: none;
 	}
 
 	.header a {
@@ -316,19 +325,14 @@ code {
 	.header {
 		background-color: $print-header-color;
 		color: $print-header-text-color;
-		// border-bottom: $print-header-border;
 	}
 
 	.left {
-		-webkit-flex-basis: 20%;
-		-ms-flex-preferred-size: 20%;
 		flex-basis: 20%;
 		max-width: 20%;
 	}
 
 	.right {
-		-webkit-flex-basis: 80%;
-		-ms-flex-preferred-size: 80%;
 		flex-basis: 80%;
 		max-width: 80%;
 

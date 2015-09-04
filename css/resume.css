@@ -3,7 +3,7 @@
     max-width: 100%;
     overflow-x: hidden; }
   .container {
-    max-width: 65em; } }
+    max-width: 66em; } }
 
 body {
   font-family: "Lora", serif;
@@ -14,7 +14,8 @@ body {
   line-height: 1.3; }
 
 @page {
-  min-width: 65em; }
+  size: US-Letter;
+  margin: 0mm; }
 
 h2 {
   margin: 0.3em 0; }
@@ -56,15 +57,23 @@ code {
   color: #222; }
   .content .header-pre {
     border-bottom: 1px solid #aaa;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     padding-right: 2em;
     margin-right: .3em; }
   .content h2 {
     text-transform: uppercase;
-    font-size: 1em; }
+    font-size: 1em;
+    letter-spacing: .12em; }
   .content .header-post {
     border-bottom: 1px solid #aaa;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
     flex-grow: 1;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     margin-left: .3em; }
 
@@ -76,6 +85,7 @@ code {
   .content {
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
+    -webkit-box-align: end;
     align-items: flex-end; } }
 
 @media screen and (max-width: 61.99em) {
@@ -88,17 +98,15 @@ code {
   .header a {
     color: #222; }
   .header h1 {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 700;
     margin: 1rem 0; }
 
 @media screen and (min-width: 48em) {
   .header {
-    margin: 0; } }
-
-@media screen and (max-width: 47.99em) {
-  .header h1 {
-    font-size: 2em; } }
+    margin: 0; }
+    .header h1 {
+      font-size: 3em; } }
 
 .left ul {
   list-style-type: none;
@@ -139,6 +147,8 @@ code {
   padding-bottom: 0.5em; }
   #experience ul {
     margin-bottom: 0; }
+    #experience ul a {
+      text-decoration: underline; }
   #experience div > ul {
     margin: 0.2em 0; }
   #experience p {
@@ -178,13 +188,25 @@ code {
     font-style: normal;
     font-weight: 700; }
 
+svg[class*="icon-"] {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  /* Icomoon doesn't vertically center fontawesome icons properly */
+  -webkit-transform: translateY(10%);
+  -ms-transform: translateY(10%);
+  transform: translateY(10%); }
+
 @media print {
   body {
-    background-color: white; }
+    background-color: white;
+    margin: 0; }
   .container {
     padding: 0; }
   .container a {
-    color: black; }
+    color: black;
+    text-decoration: none; }
   .header a {
     color: black; }
   .content {
