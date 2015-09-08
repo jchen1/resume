@@ -238,9 +238,7 @@ code {
 	}
 
 	.row em {
-		font-style: normal;
-		font-weight: $header-weight;
-		margin-bottom: 0.25em;
+		text-align: right;
 	}
 
 	@include media("<desktop", "screen") {

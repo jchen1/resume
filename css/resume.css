@@ -154,9 +154,7 @@ code {
   #experience p {
     margin: 0.5em 0; }
   #experience .row em {
-    font-style: normal;
-    font-weight: 700;
-    margin-bottom: 0.25em; }
+    text-align: right; }
 
 @media screen and (max-width: 61.99em) {
   #experience .row {
