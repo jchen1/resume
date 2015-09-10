@@ -207,6 +207,8 @@ svg[class*="icon-"] {
     text-decoration: none; }
   .header a {
     color: black; }
+  .header h1 {
+    font-size: 3em; }
   .content {
     background-color: white;
     color: black; }

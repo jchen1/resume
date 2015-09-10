@@ -16,8 +16,6 @@ $text-color: #222;
 $header-text-color: $text-color;
 $link-color: $text-color;
 
-
-
 $breakpoints: (
   'phone': 30em,
   'tablet': 48em,
@@ -313,6 +311,10 @@ svg[class*="icon-"] {
 
 	.header a {
 		color: $print-header-text-color;
+	}
+
+	.header h1 {
+		font-size: 3em;
 	}
 
 	.content {
