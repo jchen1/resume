@@ -7,7 +7,7 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
-var minify = require('gulp-minify-css');
+var clean = require('gulp-clean-css');
 var uncss = require('gulp-uncss');
 var autoprefixer = require('gulp-autoprefixer');
 
@@ -29,7 +29,7 @@ gulp.task('sass', function() {
 gulp.task('css', function() {
     return gulp.src('css/*.css')
         .pipe(uncss({html:['index.html']}))
-        .pipe(minify({compatibility: 'ie8'}))
+        .pipe(clean({compatibility: 'ie8'}))
         .pipe(concat('resume.min.css'))
         .pipe(gulp.dest('dist/css'));
 });

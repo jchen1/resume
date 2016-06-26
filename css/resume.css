@@ -20,7 +20,7 @@ body {
 h2 {
   margin: 0.3em 0; }
 
-h3 {
+h3, .big-date {
   margin: 0.5em 0; }
 
 strong {
@@ -58,7 +58,6 @@ code {
   .content .header-pre {
     border-bottom: 1px solid #aaa;
     -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     padding-right: 2em;
     margin-right: .3em; }
@@ -69,11 +68,8 @@ code {
   .content .header-post {
     border-bottom: 1px solid #aaa;
     -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
     flex-grow: 1;
     -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     margin-left: .3em; }
 
@@ -83,9 +79,8 @@ code {
 
 @media screen and (max-width: 61.99em) {
   .content {
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
     -webkit-box-align: end;
+    -ms-grid-row-align: flex-end;
     align-items: flex-end; } }
 
 @media screen and (max-width: 61.99em) {
@@ -115,8 +110,6 @@ code {
 
 @media (min-width: 62em) {
   .left {
-    -webkit-flex-basis: 20%;
-    -ms-flex-preferred-size: 20%;
     flex-basis: 20%;
     max-width: 20%; } }
 
@@ -126,8 +119,6 @@ code {
 
 @media (min-width: 62em) {
   .right {
-    -webkit-flex-basis: 80%;
-    -ms-flex-preferred-size: 80%;
     flex-basis: 80%;
     max-width: 80%;
     padding-left: 2rem; } }
@@ -193,7 +184,6 @@ svg[class*="icon-"] {
   fill: currentColor;
   /* Icomoon doesn't vertically center fontawesome icons properly */
   -webkit-transform: translateY(10%);
-  -ms-transform: translateY(10%);
   transform: translateY(10%); }
 
 @media print {
@@ -216,13 +206,9 @@ svg[class*="icon-"] {
     background-color: white;
     color: black; }
   .left {
-    -webkit-flex-basis: 20%;
-    -ms-flex-preferred-size: 20%;
     flex-basis: 20%;
     max-width: 20%; }
   .right {
-    -webkit-flex-basis: 80%;
-    -ms-flex-preferred-size: 80%;
     flex-basis: 80%;
     max-width: 80%;
     padding-left: 2rem; } }

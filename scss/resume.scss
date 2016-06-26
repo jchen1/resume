@@ -26,18 +26,16 @@ $print-resume-color: white;
 
 $print-color: false;
 $print-text-color: black;
+$print-header-color: $print-resume-color;
+$print-link-color: black;
+$print-header-border: 1px solid $line-color;
+$print-header-text-color: $print-text-color;
 
 @if ($print-color) {
 	$print-header-color: $header-color;
 	$print-link-color: $link-color;
 	$print-header-border: 0;
 	$print-header-text-color: white;
-}
-@else {
-	$print-header-color: $print-resume-color;
-	$print-link-color: black;
-	$print-header-border: 1px solid $line-color;
-	$print-header-text-color: $print-text-color;
 }
 
 @include media("screen") {
@@ -70,7 +68,7 @@ h2 {
 	margin: 0.3em 0;
 }
 
-h3 {
+h3, .big-date {
 	margin: 0.5em 0;
 }
 
