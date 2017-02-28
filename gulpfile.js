@@ -28,7 +28,7 @@ gulp.task('sass', function() {
 
 gulp.task('css', function() {
     return gulp.src('css/*.css')
-        .pipe(uncss({html:['index.html']}))
+        // .pipe(uncss({html:['index.html']}))
         .pipe(clean({compatibility: 'ie8'}))
         .pipe(concat('resume.min.css'))
         .pipe(gulp.dest('dist/css'));

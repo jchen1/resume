@@ -11,7 +11,7 @@ body {
   font-weight: 400;
   background-color: #ccc;
   margin: 0;
-  line-height: 1.3; }
+  line-height: 1.6; }
 
 @page {
   size: US-Letter;
@@ -22,6 +22,10 @@ h2 {
 
 h3, .big-date {
   margin: 0.5em 0; }
+
+h4 {
+  margin: 0.5em 0;
+  font-weight: 400; }
 
 strong {
   font-weight: 700; }
@@ -80,7 +84,6 @@ code {
 @media screen and (max-width: 61.99em) {
   .content {
     -webkit-box-align: end;
-    -ms-grid-row-align: flex-end;
     align-items: flex-end; } }
 
 @media screen and (max-width: 61.99em) {
@@ -147,6 +150,14 @@ code {
   #experience .row em {
     text-align: right; }
 
+@media screen and (max-width: 47.99em) {
+  #experience .row em {
+    text-align: left; }
+  #experience h4 {
+    margin: 0; }
+  #experience > div:not(:first-child) {
+    margin-bottom: 0.5em; } }
+
 @media screen and (max-width: 61.99em) {
   #experience .row {
     padding-left: 0; } }
@@ -172,10 +183,14 @@ code {
   padding-left: 0; }
 
 .project {
-  padding-bottom: 0.3em; }
+  padding-bottom: 0.5em; }
   .project em {
     font-style: normal;
     font-weight: 700; }
+
+@media screen and (max-width: 47.99em) {
+  .project {
+    padding-bottom: 1em; } }
 
 svg[class*="icon-"] {
   display: inline-block;
