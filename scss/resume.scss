@@ -1,7 +1,8 @@
 @import 'include-media';
 
-$font-stack: "Lora", serif;
-$header-font-stack: "Josefin Sans", sans-serif;
+$font-stack: "PT Sans", sans-serif;
+$header-font-stack: "PT Sans", sans-serif;
+$title-font-stack: "Josefin Sans", sans-serif;
 $font-size: 11pt;
 $body-weight: 400;
 $strong-weight: 700;
@@ -85,7 +86,13 @@ h1, h2, h3 {
 	font-weight: $header-weight;
 }
 
-h1, h2 {
+h1 {
+	font-family: "PT Sans Narrow", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+h2 {
 	font-family: $header-font-stack;
 }
 
