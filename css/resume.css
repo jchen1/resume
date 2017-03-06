@@ -3,7 +3,8 @@
     max-width: 100%;
     overflow-x: hidden; }
   .container {
-    max-width: 66em; } }
+    max-width: 66em;
+    position: relative; } }
 
 body {
   font-family: "PT Sans", sans-serif;
@@ -12,6 +13,24 @@ body {
   background-color: #ccc;
   margin: 0;
   line-height: 1.6; }
+
+.superheader {
+  position: absolute;
+  top: 5.5rem;
+  right: 5em;
+  text-align: right;
+  text-decoration: underline; }
+
+@media screen and (max-width: 61.99em) {
+  .superheader {
+    top: 2em; } }
+
+@media screen and (max-width: 47.99em) {
+  .superheader {
+    top: 1em;
+    left: 1em;
+    right: 0;
+    text-align: left; } }
 
 @page {
   size: US-Letter;
@@ -231,4 +250,6 @@ svg[class*="icon-"] {
   .right {
     flex-basis: 80%;
     max-width: 80%;
-    padding-left: 2rem; } }
+    padding-left: 2rem; }
+  .superheader {
+    display: none; } }

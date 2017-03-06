@@ -47,6 +47,7 @@ $print-header-text-color: $print-text-color;
 
 	.container {
 		max-width: 66em;
+		position: relative;
 	}
 }
 
@@ -58,6 +59,25 @@ body {
 	margin: 0;
 
 	line-height: 1.6;
+}
+
+.superheader {
+	position: absolute;
+	top: 5.5rem;
+	right: 5em;
+	text-align: right;
+	text-decoration: underline;
+
+	@include media("<desktop", "screen") {
+		top: 2em;
+	}
+
+	@include media("<tablet", "screen") {
+		top: 1em;
+		left: 1em;
+		right: 0;
+		text-align: left;
+	}
 }
 
 @page {
@@ -365,5 +385,9 @@ svg[class*="icon-"] {
 		max-width: 80%;
 
 		padding-left: 2rem;
+	}
+
+	.superheader {
+		display: none;
 	}
 }
