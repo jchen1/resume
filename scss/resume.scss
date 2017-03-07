@@ -3,7 +3,7 @@
 $font-stack: "PT Sans", sans-serif;
 $header-font-stack: "PT Sans", sans-serif;
 $title-font-stack: "Josefin Sans", sans-serif;
-$font-size: 11pt;
+$font-size: 12pt;
 $body-weight: 400;
 $strong-weight: 700;
 $header-weight: 700;
@@ -58,7 +58,7 @@ body {
 	background-color: $background-color;
 	margin: 0;
 
-	line-height: 1.6;
+	line-height: 1.4;
 }
 
 .superheader {
@@ -255,6 +255,9 @@ code {
 		a {
 			text-decoration: underline;
 		}
+		li {
+			padding-bottom: 0.3em;
+		}
 	}
 
 	div > ul {
@@ -291,7 +294,6 @@ code {
 }
 
 #skills {
-
 	> div:first-child {
 		margin-bottom: 0.75em;
 	}

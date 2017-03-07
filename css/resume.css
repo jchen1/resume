@@ -8,11 +8,11 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 11pt;
+  font-size: 12pt;
   font-weight: 400;
   background-color: #ccc;
   margin: 0;
-  line-height: 1.6; }
+  line-height: 1.4; }
 
 .superheader {
   position: absolute;
@@ -167,6 +167,8 @@ code {
     margin-bottom: 0; }
     #experience ul a {
       text-decoration: underline; }
+    #experience ul li {
+      padding-bottom: 0.3em; }
   #experience div > ul {
     margin: 0.2em 0; }
   #experience p {
