@@ -40,7 +40,7 @@ h2 {
   margin: 0.3em 0; }
 
 h3, .big-date {
-  margin: 0.5em 0; }
+  margin: 0.3em 0; }
 
 h4 {
   margin: 0.5em 0;
@@ -85,7 +85,6 @@ code {
   color: #222; }
   .content .header-pre {
     border-bottom: 1px solid #aaa;
-    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     padding-right: 2em;
     margin-right: .3em; }
@@ -95,9 +94,7 @@ code {
     letter-spacing: .12em; }
   .content .header-post {
     border-bottom: 1px solid #aaa;
-    -webkit-box-flex: 1;
     flex-grow: 1;
-    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     margin-left: .3em; }
 
@@ -107,7 +104,6 @@ code {
 
 @media screen and (max-width: 61.99em) {
   .content {
-    -webkit-box-align: end;
     align-items: flex-end; } }
 
 @media screen and (max-width: 61.99em) {
@@ -151,18 +147,24 @@ code {
     padding-left: 2rem; } }
 
 #projects {
-  padding-bottom: 1em; }
-  #projects > div:first-child {
-    margin-bottom: 0.75em; }
+  padding-bottom: 0.5em; }
+  #projects ul {
+    margin-bottom: 0; }
+    #projects ul a {
+      text-decoration: underline; }
+    #projects ul strong a {
+      text-decoration: none; }
+    #projects ul li {
+      padding-bottom: 0.3em; }
 
 @media screen and (max-width: 61.99em) {
-  #projects {
-    padding-bottom: 0.5em; }
-    #projects .row {
-      padding-left: 0; } }
+  #projects .row {
+    padding-left: 0; } }
 
 #experience {
   padding-bottom: 0.5em; }
+  #experience > div:nth-child(2) {
+    margin-top: .5em; }
   #experience ul {
     margin-bottom: 0; }
     #experience ul a {
@@ -224,7 +226,6 @@ svg[class*="icon-"] {
   height: 1em;
   fill: currentColor;
   /* Icomoon doesn't vertically center fontawesome icons properly */
-  -webkit-transform: translateY(10%);
   transform: translateY(10%); }
 
 @media print {
@@ -235,7 +236,7 @@ svg[class*="icon-"] {
     padding: 0; }
   .container a {
     color: black;
-    text-decoration: none; }
+    text-decoration: none !important; }
   .header a {
     color: black; }
   .header h1 {
