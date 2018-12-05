@@ -1,0 +1,14 @@
+{
+  "work": [{
+    "company": "Blend Labs",
+    "highlights": {"showUntil": 3}
+  }, {
+    "company": "National Security Agency",
+    "highlights": {"showUntil": 3}
+  }],
+  "projects": {"showUntil": 4},
+  "education": [{
+    "institution": "Carnegie Mellon University",
+    "highlights": {"hide": true}
+  }]
+}
