@@ -66,6 +66,9 @@ h3 span, h3 em {
 code {
   font-family: "Source Code Pro", monospace; }
 
+.rendered-markdown p {
+  margin: 0; }
+
 .container {
   background-color: #f8f8f8;
   margin: 0 auto;
@@ -173,8 +176,6 @@ code {
       padding-bottom: 0.3em; }
   #experience div > ul {
     margin: 0.2em 0; }
-  #experience p {
-    margin: 0.5em 0; }
   #experience .row em {
     text-align: right; }
 

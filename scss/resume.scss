@@ -124,6 +124,12 @@ code {
 	font-family: $monospace-font;
 }
 
+.rendered-markdown {
+	p {
+		margin: 0;
+	}
+}
+
 .container {
 	background-color: $resume-color;
 	margin: 0 auto;
@@ -275,10 +281,6 @@ code {
 
 	div > ul {
 		margin: 0.2em 0;
-	}
-
-	p {
-		margin: 0.5em 0;
 	}
 
 	.row em {

@@ -79,11 +79,11 @@
     "site": "https://github.com/jchen1/CLAHE-iOS"
   }, {
     "name": "threadpool",
-    "summary": "Built a [dynamic threadpool](https://github.com/jchen1/threadpool) in modern C++11 to fill the gap in the STL between `std::async` and `std::thread`",
+    "summary": "Built a **[dynamic threadpool](https://github.com/jchen1/threadpool)** in modern C++11 to fill the gap in the STL between `std::async` and `std::thread`",
     "site": "https://github.com/jchen1/threadpool"
   }, {
     "name": "chorebot",
-    "summary": "Built a [Slack bot](https://github.com/jchen1/chorebot) to track roommate chore rotation",
+    "summary": "Built a **[Slack bot](https://github.com/jchen1/chorebot)** to track roommate chore rotation",
     "site": "https://github.com/jchen1/chorebot"
   }],
   "education": [{
@@ -93,6 +93,7 @@
     "startDate": "Aug 2012",
     "endDate": "May 2016",
     "gpa": "3.4",
+    "website": "https://www.cmu.edu",
     "highlights": [
       "Minor in Human-Computer Interaction",
       "Varsity track captain and school record holder"
