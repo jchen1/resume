@@ -58,17 +58,17 @@
     ]
   }],
   "projects": [{
-    "name": "µCal",
-    "summary": "Designed and developed **[µCal](https://github.com/jchen1/uCal)**, a macOS menubar clock utility",
-    "site": "https://github.com/jchen1/uCal"
+    "name": "eva",
+    "summary": "Led development of **[eva](https://github.com/avbotz/eva-public)**, software for an autonomous submarine incorporating computer vision, control systems, and high-level planning",
+    "site": "https://github.com/avbotz/eva-public"
   }, {
     "name": "MiniPlay",
     "summary": "Created **[MiniPlay](https://github.com/jchen1/MiniPlay)**, a popular Chrome extension adding functionality to streaming music platorms",
     "site": "https://github.com/jchen1/MiniPlay"
   }, {
-    "name": "eva",
-    "summary": "Led development of **[eva](https://github.com/avbotz/eva-public)**, software for an autonomous submarine incorporating computer vision, control systems, and high-level planning",
-    "site": "https://github.com/avbotz/eva-public"
+    "name": "µCal",
+    "summary": "Designed and developed **[µCal](https://github.com/jchen1/uCal)**, a macOS menubar clock utility",
+    "site": "https://github.com/jchen1/uCal"
   }, {
     "name": "espresso",
     "summary": "Created **[espresso](https://github.com/jczhang/espresso)**, a deep learning framework designed to produce [Caffe](https://caffe.berkeleyvision.org/)-compatible maintainable yet performant code",
