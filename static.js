@@ -6,7 +6,7 @@ const _ = require('lodash');
 
 try {
   const baseHTML = fs.readFileSync("./dist/index.html").toString();
-  const markup = ReactDOMServer.renderToStaticMarkup(React.createElement(bundle.App));
+  const markup = ReactDOMServer.renderToStaticMarkup(React.createElement(bundle.Resume));
 
   const cssHTML = _.replace(
     baseHTML,
@@ -15,8 +15,8 @@ try {
 
   const staticHTML = _.replace(
     cssHTML,
-    "\<div id=\"app\"\>\</div\>",
-    `<div id=\"app\">${markup}</div>`);
+    "\<div id=\"resume\"\>\</div\>",
+    `<div id=\"resume\">${markup}</div>`);
 
   fs.writeFileSync('./index.html', staticHTML);
 } catch (e) {

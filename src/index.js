@@ -1,24 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ReactDOMServer from 'react-dom/server';
-import {Helmet} from 'react-helmet';
 import ReactMarkdown from 'react-markdown';
 import _ from 'lodash';
 
-import {configure} from './Configuration';
+import { configure } from './Configuration';
 
 import rawResume from './resume.json';
 import config from './config.json';
 
 const resume = configure(rawResume, config);
 
-export class App extends React.Component {
+export class Resume extends React.Component {
   render () {
     return (
       <div className="container">
-        <Helmet>
-            <title>{`${resume.basics.name} - Résumé`}</title>
-        </Helmet>
         <div className="superheader">
           <a href="./resume.pdf">Download PDF</a>
         </div>
@@ -29,13 +24,13 @@ export class App extends React.Component {
           <div className="contact col-sm-6 col-xs-6 left">
             <ul>
               <li>
-                  <a href={"mailto:" + resume.basics.email}>{resume.basics.email}</a>&nbsp;<svg className="icon-envelope-o icon-fw"><use xlinkHref="#icon-envelope-o"></use></svg>
+                <a href={"mailto:" + resume.basics.email}>{resume.basics.email}</a>&nbsp;<svg className="icon-envelope-o icon-fw"><use xlinkHref="#icon-envelope-o"></use></svg>
               </li>
               <li>
-                  {resume.basics.location.city}, {resume.basics.location.region}&nbsp;<svg className="icon-map-marker icon-fw"><use xlinkHref="#icon-map-marker"></use></svg>
+                {resume.basics.location.city}, {resume.basics.location.region}&nbsp;<svg className="icon-map-marker icon-fw"><use xlinkHref="#icon-map-marker"></use></svg>
               </li>
               <li>
-                  {resume.basics.phone}&nbsp;<svg className="icon-mobile icon-fw"><use xlinkHref="#icon-mobile"></use></svg>
+                {resume.basics.phone}&nbsp;<svg className="icon-mobile icon-fw"><use xlinkHref="#icon-mobile"></use></svg>
               </li>
               <li>
                   <a href={"http://" + resume.basics.website} target="_blank">{resume.basics.website}</a>&nbsp;<svg className="icon-cloud icon-fw"><use xlinkHref="#icon-cloud"></use></svg>
@@ -117,8 +112,8 @@ export class App extends React.Component {
 // If we're in dev mode
 if (module.hot) {
   ReactDOM.render(
-    <App />,
-    document.getElementById('app')
+    <Resume />,
+    document.getElementById('resume')
   );
   module.hot.accept();
 }
