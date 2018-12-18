@@ -51,7 +51,7 @@
     "startDate": "Jun 2012",
     "endDate": "Apr 2016",
     "highlights": [
-      "Implemented [Linux IMA](http://linux-ima.sourceforge.net/) in Android devices using the embedded [TrustZone secure environment](http://www.arm.com/products/processors/technologies/trustzone/) for trusted boots",
+      "Implemented [Linux IMA](https://linux-ima.sourceforge.net/) in Android devices using the embedded [TrustZone secure environment](https://www.arm.com/products/processors/technologies/trustzone/) for trusted boots",
       "Developed CNE operations tool for collection of computer-to-computer communications",
       "Wrote utilities for lightweight heuristic-based malware detection",
       "Created network traffic visualizations, enabling analysts to easily spot anomalies"
@@ -71,7 +71,7 @@
     "site": "https://github.com/avbotz/eva-public"
   }, {
     "name": "espresso",
-    "summary": "Created **[espresso](https://github.com/jczhang/espresso)**, a deep learning framework designed to produce [Caffe](http://caffe.berkeleyvision.org/)-compatible maintainable yet performant code",
+    "summary": "Created **[espresso](https://github.com/jczhang/espresso)**, a deep learning framework designed to produce [Caffe](https://caffe.berkeleyvision.org/)-compatible maintainable yet performant code",
     "site": "https://github.com/jczhang/espresso"
   }, {
     "name": "CLAHE",
