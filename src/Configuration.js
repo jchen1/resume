@@ -3,13 +3,13 @@ import _ from 'lodash';
 function configureWork(work, workConfig) {
   return _.map(work, w => {
     const config = _.find(workConfig, c => w.company === c.company);
-    const highlights =  _.take(w.highlights, _.get(config, "highlights.showUntil", _.size(w.highlights)));
+    const highlights =  _.take(w.highlights, _.get(config, "highlights.show", _.size(w.highlights)));
     return _.extend(w, { highlights });
   });
 }
 
-function configureProjects(projects, {showUntil}) {
-  return _.take(projects, _.isNil(showUntil) ? _.size(projects) : showUntil);
+function configureProjects(projects, {show}) {
+  return _.take(projects, _.isNil(show) ? _.size(projects) : show);
 }
 
 function configureEducation(education, educationConfig) {
