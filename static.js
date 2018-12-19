@@ -1,4 +1,4 @@
-const { bundle } = require('./dist/bundle');
+const { bundle } = require('./dist/static');
 const fs = require('fs');
 const ReactDOMServer = require('react-dom/server');
 const React = require('react');
