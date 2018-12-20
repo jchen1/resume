@@ -27,4 +27,4 @@ function watch() {
 
 // Default Task
 exports.watch = watch;
-exports.default = watch;
+exports.default = gulp.series(sass, css, watch);
