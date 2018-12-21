@@ -13,8 +13,13 @@ try {
     "css/resume.min.css",
     "dist/css/resume.min.css");
 
-  const staticHTML = _.replace(
+  const noBundleHTML = _.replace(
     cssHTML,
+    "\<script src=\"\.\/bundle\.js\"\>\<\/script\>",
+    "");
+
+  const staticHTML = _.replace(
+    noBundleHTML,
     "\<div id=\"resume\"\>\</div\>",
     `<div id=\"resume\">${markup}</div>`);
 
