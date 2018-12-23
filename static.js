@@ -3,27 +3,20 @@ const fs = require('fs');
 const ReactDOMServer = require('react-dom/server');
 const React = require('react');
 const _ = require('lodash');
+const cheerio = require('cheerio');
 
 try {
   const baseHTML = fs.readFileSync("./dist/index.html").toString();
+  const $ = cheerio.load(baseHTML);
+
   const markup = ReactDOMServer.renderToStaticMarkup(React.createElement(bundle.Resume));
 
-  const cssHTML = _.replace(
-    baseHTML,
-    "css/resume.min.css",
-    "dist/css/resume.min.css");
+  $('link[href="css/resume.min.css"]').attr('href', 'dist/css/resume.min.css');
+  $('script').remove();
+  
+  $('#resume').append(markup);
 
-  const noBundleHTML = _.replace(
-    cssHTML,
-    "\<script src=\"\.\/bundle\.js\"\>\<\/script\>",
-    "");
-
-  const staticHTML = _.replace(
-    noBundleHTML,
-    "\<div id=\"resume\"\>\</div\>",
-    `<div id=\"resume\">${markup}</div>`);
-
-  fs.writeFileSync('./index.html', staticHTML);
+  fs.writeFileSync('./index.html', $.html());
 } catch (e) {
   console.log(e);
 }
