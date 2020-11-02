@@ -1,14 +1,19 @@
 {
-  "work": [{
-    "company": "Blend Labs",
-    "highlights": {"show": 3}
-  }, {
-    "company": "National Security Agency",
-    "highlights": {"show": 3}
-  }],
-  "projects": {"show": 4},
-  "education": [{
-    "institution": "Carnegie Mellon University",
-    "highlights": {"hide": true}
-  }]
+  "work": [
+    {
+      "company": "Blend Labs",
+      "highlights": { "show": 3 }
+    },
+    {
+      "company": "National Security Agency",
+      "highlights": { "show": 3 }
+    }
+  ],
+  "projects": { "show": 0 },
+  "education": [
+    {
+      "institution": "Carnegie Mellon University",
+      "highlights": { "hide": true }
+    }
+  ]
 }

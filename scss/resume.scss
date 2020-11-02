@@ -1,4 +1,4 @@
-@import 'include-media';
+@import "include-media";
 
 $font-stack: "PT Sans", sans-serif;
 $header-font-stack: "PT Sans", sans-serif;
@@ -18,9 +18,9 @@ $header-text-color: $text-color;
 $link-color: $text-color;
 
 $breakpoints: (
-  'phone': 30em,
-  'tablet': 48em,
-  'desktop': 62em
+  "phone": 30em,
+  "tablet": 48em,
+  "desktop": 62em,
 );
 
 $print-resume-color: white;
@@ -33,379 +33,383 @@ $print-header-border: 1px solid $line-color;
 $print-header-text-color: $print-text-color;
 
 @if ($print-color) {
-	$print-header-color: $header-color;
-	$print-link-color: $link-color;
-	$print-header-border: 0;
-	$print-header-text-color: white;
+  $print-header-color: $header-color;
+  $print-link-color: $link-color;
+  $print-header-border: 0;
+  $print-header-text-color: white;
 }
 
 @include media("screen") {
-	html, body {
-		max-width: 100%;
-		overflow-x: hidden;
-	}
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 
-	.container {
-		max-width: 66em;
-		position: relative;
-	}
+  .container {
+    max-width: 66em;
+    position: relative;
+  }
 }
 
 body {
-	font-family: $font-stack;
-	font-size: $font-size;
-	font-weight: $body-weight;
-	background-color: $background-color;
-	margin: 0;
+  font-family: $font-stack;
+  font-size: $font-size;
+  font-weight: $body-weight;
+  background-color: $background-color;
+  margin: 0;
 
-	line-height: 1.4;
+  line-height: 1.4;
 }
 
 .superheader {
-	position: absolute;
-	top: 5.5rem;
-	right: 5em;
-	text-align: right;
-	text-decoration: underline;
+  position: absolute;
+  top: 5.5rem;
+  right: 5em;
+  text-align: right;
+  text-decoration: underline;
 
-	@include media("<desktop", "screen") {
-		top: 2em;
-	}
+  @include media("<desktop", "screen") {
+    top: 2em;
+  }
 
-	@include media("<tablet", "screen") {
-		top: 1em;
-		left: 1em;
-		right: 0;
-		text-align: left;
-	}
+  @include media("<tablet", "screen") {
+    top: 1em;
+    left: 1em;
+    right: 0;
+    text-align: left;
+  }
 }
 
 @page {
-	size: US-Letter;
-	margin: 0mm;
+  size: US-Letter;
+  margin: 0mm;
 }
 
 h2 {
-	margin: 0.3em 0;
+  margin: 0.3em 0;
 }
 
-h3, .big-date {
-	margin: 0.3em 0;
+h3,
+.big-date {
+  margin: 0.3em 0;
 }
 
 h4 {
-	margin: 0.5em 0;
-	font-weight: $body-weight;
+  margin: 0.5em 0;
+  font-weight: $body-weight;
 }
 
 strong {
-	font-weight: $strong-weight;
+  font-weight: $strong-weight;
 }
 
-h1, h2, h3 {
-	font-weight: $header-weight;
+h1,
+h2,
+h3 {
+  font-weight: $header-weight;
 }
 
 h1 {
-	font-family: "PT Sans Narrow", sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 h2 {
-	font-family: $header-font-stack;
+  font-family: $header-font-stack;
 }
 
-h3 span, h3 em {
-	font-weight: $body-weight;
+h3 span,
+h3 em {
+  font-weight: $body-weight;
 }
 
 code {
-	font-family: $monospace-font;
+  font-family: $monospace-font;
 }
 
 .rendered-markdown {
-	p {
-		margin: 0;
-	}
+  p {
+    margin: 0;
+  }
 }
 
 .container {
-	background-color: $resume-color;
-	margin: 0 auto;
-	box-sizing: border-box;
+  background-color: $resume-color;
+  margin: 0 auto;
+  box-sizing: border-box;
 
-	a {
-		text-decoration: none;
-		color: $link-color;
-	}
+  a {
+    text-decoration: none;
+    color: $link-color;
+  }
 
-	@include media(">=tablet", "screen") {
-		box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
-		margin-top: 2em;
-		margin-bottom: 2em;
-	}
+  @include media(">=tablet", "screen") {
+    box-shadow: 0 0 1.7em rgba(0, 0, 0, 0.5);
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
 }
 
 .content {
-	padding: 3em 5em;
-	color: $text-color;
+  padding: 3em 5em;
+  color: $text-color;
 
-	.header-pre {
-		border-bottom: 1px solid $line-color;
-		transform: translateY(-50%);
+  .header-pre {
+    border-bottom: 1px solid $line-color;
+    transform: translateY(-50%);
 
-		padding-right: 2em;
-		margin-right: .3em;
-	}
+    padding-right: 2em;
+    margin-right: 0.3em;
+  }
 
-	h2 {
-		text-transform: uppercase;
-		font-size: 1em;
-		letter-spacing: .12em;
-	}
+  h2 {
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.12em;
+  }
 
-	.header-post {
-		border-bottom: 1px solid $line-color;
-		flex-grow: 1;
-		transform: translateY(-50%);
-		margin-left: .3em;
-	}
+  .header-post {
+    border-bottom: 1px solid $line-color;
+    flex-grow: 1;
+    transform: translateY(-50%);
+    margin-left: 0.3em;
+  }
 
-	@include media("<tablet", "screen") {
-		padding: 0em 1em 5em 1em;
-	}
+  @include media("<tablet", "screen") {
+    padding: 0em 1em 5em 1em;
+  }
 
-	@include media("<desktop", "screen") {
-		-webkit-align-items: flex-end;
-		-ms-flex-align: end;
-		align-items: flex-end;
-	}
+  @include media("<desktop", "screen") {
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
 }
 
 .contact {
-	@include media("<desktop", "screen") {
-		text-align: right;
-	}
+  @include media("<desktop", "screen") {
+    text-align: right;
+  }
 }
 
 .header {
-	background-color: $header-color;
-	color: $header-text-color;
+  background-color: $header-color;
+  color: $header-text-color;
 
-	a {
-		color: $header-text-color;
-	}
+  a {
+    color: $header-text-color;
+  }
 
-	h1 {
-		font-size: 2em;
-		font-weight: $header-weight;
-		margin: 1rem 0;
-	}
+  h1 {
+    font-size: 2em;
+    font-weight: $header-weight;
+    margin: 1rem 0;
+  }
 
-	@include media(">=tablet", "screen") {
-		margin: 0;
-		h1 {
-			font-size: 3em;
-		}
-	}
+  @include media(">=tablet", "screen") {
+    margin: 0;
+    h1 {
+      font-size: 3em;
+    }
+  }
 }
 
 .left {
-	ul {
-		list-style-type: none;
-		text-align: right;
-		padding: 0;
-	}
+  ul {
+    list-style-type: none;
+    text-align: right;
+    padding: 0;
+  }
 
-	@include media(">=desktop") {
-		flex-basis: 20%;
-		max-width: 20%;
-	}
+  @include media(">=desktop") {
+    flex-basis: 20%;
+    max-width: 20%;
+  }
 
-	@include media("<desktop", "screen") {
-		padding-right: 0;
-	}
+  @include media("<desktop", "screen") {
+    padding-right: 0;
+  }
 }
 
 .right {
-	@include media(">=desktop") {
-		flex-basis: 80%;
-		max-width: 80%;
+  @include media(">=desktop") {
+    flex-basis: 80%;
+    max-width: 80%;
 
-		padding-left: 2rem;
-	}
+    padding-left: 2rem;
+  }
 }
 
 #projects {
-	padding-bottom: 0.5em;
+  padding-bottom: 0.5em;
 
-	ul {
-		margin-bottom: 0;
-		a {
-			text-decoration: underline;
-		}
-		strong {
-			a {
-				text-decoration: none;
-			}
-		}
-		li {
-			padding-bottom: 0.3em;
-		}
-	}
+  ul {
+    margin-bottom: 0;
+    a {
+      text-decoration: underline;
+    }
+    strong {
+      a {
+        text-decoration: none;
+      }
+    }
+    li {
+      padding-bottom: 0.3em;
+    }
+  }
 
-	@include media("<desktop", "screen") {
-		.row {
-			padding-left: 0;
-		}
-	}
+  @include media("<desktop", "screen") {
+    .row {
+      padding-left: 0;
+    }
+  }
 }
 
 #experience {
-	padding-bottom: 0.5em;
+  padding-bottom: 0.5em;
 
-	> div:nth-child(2){
-		margin-top: .5em;
-	}
+  > div:nth-child(2) {
+    margin-top: 0.5em;
+  }
 
-	ul {
-		margin-bottom: 0;
-		a {
-			text-decoration: underline;
-		}
-		li {
-			padding-bottom: 0.3em;
-		}
-	}
+  ul {
+    margin-bottom: 0;
+    a {
+      text-decoration: underline;
+    }
+    li {
+      padding-bottom: 0.3em;
+    }
+  }
 
-	div > ul {
-		margin: 0.2em 0;
-	}
+  div > ul {
+    margin: 0.2em 0;
+  }
 
-	.row em {
-		text-align: right;
-	}
+  .row em {
+    text-align: right;
+  }
 
-	@include media("<tablet", "screen") {
-		.row em {
-			text-align: left;
-		}
+  @include media("<tablet", "screen") {
+    .row em {
+      text-align: left;
+    }
 
-		h4 {
-			margin: 0;
-		}
+    h4 {
+      margin: 0;
+    }
 
-		> div:not(:first-child) {
-			margin-bottom: 0.5em;
-		}
-	}
+    > div:not(:first-child) {
+      margin-bottom: 0.5em;
+    }
+  }
 
-	@include media("<desktop", "screen") {
-		.row {
-			padding-left: 0;
-		}
-	}
+  @include media("<desktop", "screen") {
+    .row {
+      padding-left: 0;
+    }
+  }
 }
 
 #skills {
-	> div:first-child {
-		margin-bottom: 0.75em;
-	}
+  > div:first-child {
+    margin-bottom: 0.75em;
+  }
 
-	ul {
-		margin: 0;
-		padding-bottom: .5em;
-	}
+  ul {
+    margin: 0;
+    padding-bottom: 0.5em;
+  }
 
-	strong {
-		margin: 0;
-		padding-bottom: .5em;
-	}
+  strong {
+    margin: 0;
+    padding-bottom: 0.5em;
+  }
 
-	li {
-		display: inline;
-	}
+  li {
+    display: inline;
+  }
 
-	li:nth-child(n+2):before {
-		content: "\2022  ";
-	}
+  li:nth-child(n + 2):before {
+    content: "  \2022  ";
+  }
 
-	>div {
-		padding-left: 0;
-	}
-
+  > div {
+    padding-left: 0;
+  }
 }
 
 .project {
-	padding-bottom: 0.5em;
+  padding-bottom: 0.5em;
 
-	em {
-		font-style: normal;
-		font-weight: $header-weight;
-	}
+  em {
+    font-style: normal;
+    font-weight: $header-weight;
+  }
 
-	@include media("<tablet", "screen") {
-		padding-bottom: 1em;
-	}
+  @include media("<tablet", "screen") {
+    padding-bottom: 1em;
+  }
 }
 
 svg[class*="icon-"] {
-	display: inline-block;
-	width: 1em;
-	height: 1em;
-	fill: currentColor;
-	/* Icomoon doesn't vertically center fontawesome icons properly */
-	transform: translateY(10%);
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  /* Icomoon doesn't vertically center fontawesome icons properly */
+  transform: translateY(10%);
 }
 
 @include media("print") {
-	body {
-		background-color: $print-resume-color;
-		margin: 0;
-	}
+  body {
+    background-color: $print-resume-color;
+    margin: 0;
+  }
 
-	.container {
-		padding: 0;
-	}
+  .container {
+    padding: 0;
+  }
 
-	.container a {
-		color: $print-link-color;
-		// I really want to override everything
-		text-decoration: none!important;
-	}
+  .container a {
+    color: $print-link-color;
+    // I really want to override everything
+    text-decoration: none !important;
+  }
 
-	.header a {
-		color: $print-header-text-color;
-	}
+  .header a {
+    color: $print-header-text-color;
+  }
 
-	.header h1 {
-		font-size: 3em;
-	}
+  .header h1 {
+    font-size: 3em;
+  }
 
-	.content {
-		background-color: $print-resume-color;
-		color: $print-text-color;
-	}
+  .content {
+    background-color: $print-resume-color;
+    color: $print-text-color;
+  }
 
-	.header {
-		background-color: $print-header-color;
-		color: $print-header-text-color;
-	}
+  .header {
+    background-color: $print-header-color;
+    color: $print-header-text-color;
+  }
 
-	.left {
-		flex-basis: 20%;
-		max-width: 20%;
-	}
+  .left {
+    flex-basis: 20%;
+    max-width: 20%;
+  }
 
-	.right {
-		flex-basis: 80%;
-		max-width: 80%;
+  .right {
+    flex-basis: 80%;
+    max-width: 80%;
 
-		padding-left: 2rem;
-	}
+    padding-left: 2rem;
+  }
 
-	.superheader {
-		display: none;
-	}
+  .superheader {
+    display: none;
+  }
 }

@@ -9,128 +9,161 @@
       "region": "CA"
     }
   },
-  "work": [{
-    "company": "Ladder Life",
-    "position": "Head of Security and Infrastructure",
-    "website": "https://www.ladderlife.com",
-    "startDate": "May 2018",
-    "endDate": "present",
-    "highlights": [
-      "Responsible for overall security posture, including risk management, employee training, and proactive and reactive responses to possible threats",
-      "Directed infrastructure roadmap, including performance, metrics & alerting, and stability",
-      "Collaborated with legal to build a comprehensive infosec program complying with life insurance regulations in all 50 states",
-      "Negotiated contracts and managed relationships with IT and engineering third parties"
-    ]
-  }, {
-    "company": "Ladder Life",
-    "position": "Software Engineer",
-    "website": "https://www.ladderlife.com",
-    "startDate": "Nov 2017",
-    "endDate": "May 2018",
-    "highlights": [
-      "Enabled real-time metrics by reducing ETL latency from 24 hours to under 10 seconds",
-      "Designed new CI/CD workflow to speed up developer productivity and reduce deployment risk",
-      "Set up autoscaling infrastructure to handle traffic spikes of up to 20x baseline"
-    ]
-  }, {
-    "company": "Blend Labs",
-    "position": "Software Engineer",
-    "website": "https://www.blend.com",
-    "startDate": "Jul 2016",
-    "endDate": "Nov 2017",
-    "highlights": [
-      "Enabled third-party \"App Store\" by supporting external data stores in the data model",
-      "Directly impacted customer signing by developing several API endpoints and by improving platform performance by over 50%",
-      "Dramatically increased release and developer velocity by automating regression tests and enforcing API contracts across microservices",
-      "Mentored and onboarded new hires and interns"
-    ]
-  }, {
-    "company": "National Security Agency",
-    "position": "Stokes Scholar",
-    "website": "https://www.nsa.gov",
-    "startDate": "Jun 2012",
-    "endDate": "Apr 2016",
-    "highlights": [
-      "Implemented [Linux IMA](https://linux-ima.sourceforge.net/) in Android devices using the embedded [TrustZone secure environment](https://www.arm.com/products/processors/technologies/trustzone/) for trusted boots",
-      "Developed CNE operations tool for collection of computer-to-computer communications",
-      "Wrote utilities for lightweight heuristic-based malware detection",
-      "Created network traffic visualizations, enabling analysts to easily spot anomalies"
-    ]
-  }],
-  "projects": [{
-    "name": "eva",
-    "summary": "Led development of **[eva](https://github.com/avbotz/eva-public)**, software for an autonomous submarine incorporating computer vision, control systems, and high-level planning",
-    "site": "https://github.com/avbotz/eva-public"
-  }, {
-    "name": "MiniPlay",
-    "summary": "Created **[MiniPlay](https://github.com/jchen1/MiniPlay)**, a popular Chrome extension adding functionality to streaming music platorms",
-    "site": "https://github.com/jchen1/MiniPlay"
-  }, {
-    "name": "µCal",
-    "summary": "Designed and developed **[µCal](https://github.com/jchen1/uCal)**, a macOS menubar clock utility",
-    "site": "https://github.com/jchen1/uCal"
-  }, {
-    "name": "espresso",
-    "summary": "Created **[espresso](https://github.com/jczhang/espresso)**, a deep learning framework designed to produce [Caffe](https://caffe.berkeleyvision.org/)-compatible maintainable yet performant code",
-    "site": "https://github.com/jczhang/espresso"
-  }, {
-    "name": "CLAHE",
-    "summary": "Wrote a high-performance iOS [night vision library](https://github.com/jchen1/CLAHE-iOS) for real-time vision pipelines",
-    "site": "https://github.com/jchen1/CLAHE-iOS"
-  }, {
-    "name": "threadpool",
-    "summary": "Built a **[dynamic threadpool](https://github.com/jchen1/threadpool)** in modern C++11 to fill the gap in the STL between `std::async` and `std::thread`",
-    "site": "https://github.com/jchen1/threadpool"
-  }, {
-    "name": "chorebot",
-    "summary": "Built a **[Slack bot](https://github.com/jchen1/chorebot)** to track roommate chore rotation",
-    "site": "https://github.com/jchen1/chorebot"
-  }],
-  "education": [{
-    "institution": "Carnegie Mellon University",
-    "area": "Computer Science",
-    "studyType": "B.S.",
-    "startDate": "Aug 2012",
-    "endDate": "May 2016",
-    "gpa": "3.4",
-    "website": "https://www.cmu.edu",
-    "highlights": [
-      "Minor in Human-Computer Interaction",
-      "Varsity track captain and school record holder"
-    ]
-  }],
-  "skills": [{
-    "name": "Languages",
-    "keywords": [
-      "Clojure(script)",
-      "Javascript/Typescript",
-      "Python",
-      "C++",
-      "C",
-      "Swift",
-      "Java",
-      "x86"
-    ]
-  }, {
-    "name": "Technologies",
-    "keywords": [
-      "Cryptosystem design",
-      "*nix kernel",
-      "OpenMP/Open MPI",
-      "SIMD",
-      "CUDA/OpenCL",
-      "OpenCV",
-      "Embedded systems"
-    ]
-  }, {
-    "name": "Web",
-    "keywords": [
-      "MEAN",
-      "React",
-      "LESS/SASS/CSS",
-      "Selenium",
-      "Socket.IO",
-      "jQuery"
-    ]
-  }]
+  "work": [
+    {
+      "company": "Ladder Life",
+      "position": "Engineering Manager",
+      "website": "https://www.ladderlife.com",
+      "startDate": "Feb 2019",
+      "endDate": "present",
+      "highlights": [
+        "Managed a group of engineers across Ladder: mentored and set career goals, gave continuous feedback, ran performance reviews, and advocated to leadership on their behalf",
+        "Set technical direction on one of Ladder's product teams by writing tech specs, scoping projects, and reviewing code",
+        "Ran Ladder's SWE recruiting program: wrote job description, interviewed candidates, made hiring decisions, and closed offers"
+      ]
+    },
+    {
+      "company": "Ladder Life",
+      "position": "Head of Security and Infrastructure",
+      "website": "https://www.ladderlife.com",
+      "startDate": "May 2018",
+      "endDate": "present",
+      "highlights": [
+        "Responsible for overall security posture, including risk management, employee training, and proactive and reactive responses to possible threats",
+        "Directed infrastructure roadmap, including performance, metrics & alerting, and stability",
+        "Collaborated with legal to build a comprehensive infosec program complying with life insurance regulations in all 50 states",
+        "Negotiated contracts and managed relationships with IT and engineering third parties"
+      ]
+    },
+    {
+      "company": "Ladder Life",
+      "position": "Software Engineer",
+      "website": "https://www.ladderlife.com",
+      "startDate": "Nov 2017",
+      "endDate": "May 2018",
+      "highlights": [
+        "Enabled real-time metrics by reducing ETL latency from 24 hours to under 10 seconds",
+        "Designed new CI/CD workflow to speed up developer productivity and reduce deployment risk",
+        "Set up autoscaling infrastructure to handle traffic spikes of up to 20x baseline"
+      ]
+    },
+    {
+      "company": "Blend Labs",
+      "position": "Software Engineer",
+      "website": "https://www.blend.com",
+      "startDate": "Jul 2016",
+      "endDate": "Nov 2017",
+      "highlights": [
+        "Enabled third-party \"App Store\" by supporting external data stores in the data model",
+        "Directly impacted customer signing by developing several API endpoints and by improving platform performance by over 50%",
+        "Dramatically increased release and developer velocity by automating regression tests and enforcing API contracts across microservices",
+        "Mentored and onboarded new hires and interns"
+      ]
+    },
+    {
+      "company": "National Security Agency",
+      "position": "Stokes Scholar",
+      "website": "https://www.nsa.gov",
+      "startDate": "Jun 2012",
+      "endDate": "Apr 2016",
+      "highlights": [
+        "Implemented [Linux IMA](https://linux-ima.sourceforge.net/) in Android devices using the embedded [TrustZone secure environment](https://www.arm.com/products/processors/technologies/trustzone/) for trusted boots",
+        "Developed CNE operations tool for collection of computer-to-computer communications",
+        "Wrote utilities for lightweight heuristic-based malware detection",
+        "Created network traffic visualizations, enabling analysts to easily spot anomalies"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "eva",
+      "summary": "Led development of **[eva](https://github.com/avbotz/eva-public)**, software for an autonomous submarine incorporating computer vision, control systems, and high-level planning",
+      "site": "https://github.com/avbotz/eva-public"
+    },
+    {
+      "name": "MiniPlay",
+      "summary": "Created **[MiniPlay](https://github.com/jchen1/MiniPlay)**, a popular Chrome extension adding functionality to streaming music platorms",
+      "site": "https://github.com/jchen1/MiniPlay"
+    },
+    {
+      "name": "µCal",
+      "summary": "Designed and developed **[µCal](https://github.com/jchen1/uCal)**, a macOS menubar clock utility",
+      "site": "https://github.com/jchen1/uCal"
+    },
+    {
+      "name": "espresso",
+      "summary": "Created **[espresso](https://github.com/jczhang/espresso)**, a deep learning framework designed to produce [Caffe](https://caffe.berkeleyvision.org/)-compatible maintainable yet performant code",
+      "site": "https://github.com/jczhang/espresso"
+    },
+    {
+      "name": "CLAHE",
+      "summary": "Wrote a high-performance iOS [night vision library](https://github.com/jchen1/CLAHE-iOS) for real-time vision pipelines",
+      "site": "https://github.com/jchen1/CLAHE-iOS"
+    },
+    {
+      "name": "threadpool",
+      "summary": "Built a **[dynamic threadpool](https://github.com/jchen1/threadpool)** in modern C++11 to fill the gap in the STL between `std::async` and `std::thread`",
+      "site": "https://github.com/jchen1/threadpool"
+    },
+    {
+      "name": "chorebot",
+      "summary": "Built a **[Slack bot](https://github.com/jchen1/chorebot)** to track roommate chore rotation",
+      "site": "https://github.com/jchen1/chorebot"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Carnegie Mellon University",
+      "area": "Computer Science",
+      "studyType": "B.S.",
+      "startDate": "Aug 2012",
+      "endDate": "May 2016",
+      "gpa": "3.4",
+      "website": "https://www.cmu.edu",
+      "highlights": [
+        "Minor in Human-Computer Interaction",
+        "Varsity track captain and school record holder"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": [
+        "Clojure(script)",
+        "Javascript/Typescript",
+        "Python",
+        "C++",
+        "C",
+        "Swift",
+        "Java"
+      ]
+    },
+    {
+      "name": "Technologies",
+      "keywords": [
+        "Kubernetes",
+        "Docker",
+        "AWS",
+        "Terraform",
+        "Datomic",
+        "Kafka",
+        "Packer",
+        "BUCK",
+        "Git",
+        "Cryptosystem design"
+      ]
+    },
+    {
+      "name": "Web",
+      "keywords": [
+        "React",
+        "GraphQL",
+        "LESS/SASS/CSS",
+        "MEAN",
+        "Webpack",
+        "Selenium"
+      ]
+    }
+  ]
 }

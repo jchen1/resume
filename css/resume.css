@@ -1,5 +1,6 @@
 @media screen {
-  html, body {
+  html,
+  body {
     max-width: 100%;
     overflow-x: hidden; }
   .container {
@@ -39,7 +40,8 @@ body {
 h2 {
   margin: 0.3em 0; }
 
-h3, .big-date {
+h3,
+.big-date {
   margin: 0.3em 0; }
 
 h4 {
@@ -49,7 +51,9 @@ h4 {
 strong {
   font-weight: 700; }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 700; }
 
 h1 {
@@ -60,7 +64,8 @@ h1 {
 h2 {
   font-family: "PT Sans", sans-serif; }
 
-h3 span, h3 em {
+h3 span,
+h3 em {
   font-weight: 400; }
 
 code {
@@ -90,16 +95,16 @@ code {
     border-bottom: 1px solid #aaa;
     transform: translateY(-50%);
     padding-right: 2em;
-    margin-right: .3em; }
+    margin-right: 0.3em; }
   .content h2 {
     text-transform: uppercase;
     font-size: 1em;
-    letter-spacing: .12em; }
+    letter-spacing: 0.12em; }
   .content .header-post {
     border-bottom: 1px solid #aaa;
     flex-grow: 1;
     transform: translateY(-50%);
-    margin-left: .3em; }
+    margin-left: 0.3em; }
 
 @media screen and (max-width: 47.99em) {
   .content {
@@ -167,7 +172,7 @@ code {
 #experience {
   padding-bottom: 0.5em; }
   #experience > div:nth-child(2) {
-    margin-top: .5em; }
+    margin-top: 0.5em; }
   #experience ul {
     margin-bottom: 0; }
     #experience ul a {
@@ -196,17 +201,17 @@ code {
 
 #skills ul {
   margin: 0;
-  padding-bottom: .5em; }
+  padding-bottom: 0.5em; }
 
 #skills strong {
   margin: 0;
-  padding-bottom: .5em; }
+  padding-bottom: 0.5em; }
 
 #skills li {
   display: inline; }
 
-#skills li:nth-child(n+2):before {
-  content: "\2022  "; }
+#skills li:nth-child(n + 2):before {
+  content: "  \2022  "; }
 
 #skills > div {
   padding-left: 0; }
